@@ -24,6 +24,9 @@
  //字符串转字符串ArrayBuffer
  function str2ab(s,f) {
      var b = new Blob([s],{type:'text/plain'});
+     b.arrayBuffer().then((res)=>{
+        console.log(res)
+     })
      var r = new FileReader();
      r.readAsArrayBuffer(b);
      r.onload = function (){console.log(r.result)}
@@ -32,3 +35,42 @@
  // str2ab('hello')
 
 ```
+
+#### 实现可写流类
++ _write：实现write
++ _writv：实现数据组write
++ _final：结束
+```js
+/*
+* 实现可写流的 API
+* */
+
+const {Writable} = require('stream');
+
+class StringWritable extends Writable {
+    constructor(options) {
+        super(options);
+        this.data = '';
+    }
+
+    _write(chunk, encoding, callback) {
+        if (encoding === 'buffer') {
+            chunk = chunk.toString('utf8')
+        }
+        this.data += chunk
+        callback()
+    }
+    _final(callback) {
+        callback();
+    }
+}
+
+const w = new StringWritable();
+w.write('test')
+w.write(Buffer.from('buffer'),'buffer')
+w.end();
+console.log(w.data)
+
+```
+
+#### 
