@@ -34,6 +34,10 @@
 - 与 babel 相同
 
 
+#### 新特性装饰器
+- 可选链操作符 ：@babel/plugin-proposal-optional-chaining
+
+
 
 
 

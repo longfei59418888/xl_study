@@ -35,4 +35,26 @@ p{
 }
 ```
 
-
+#### 高光滑过
+```sass
+@keyframes jt-coms-height-bg-frame {
+    0% {left: -20%;}
+    30% {left: 120%;}
+    100% {left: 120%;}
+}
+.jt-coms-height-bg-move {
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 50px;
+        height: 100%;
+        background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+        transform: skew(20deg);
+        animation: 4s jt-coms-height-bg-frame infinite;
+    }
+}
+```
