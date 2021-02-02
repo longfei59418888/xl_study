@@ -20,6 +20,7 @@
          console.log(r.result)
      }
  }
+
  
  //字符串转字符串ArrayBuffer
  function str2ab(s,f) {

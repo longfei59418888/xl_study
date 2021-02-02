@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lc/二叉树中序.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/微服务/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/hook.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css3重温和学习/css3效果.md" beforeDir="false" afterPath="$PROJECT_DIR$/css3重温和学习/css3效果.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es6/babel.md" beforeDir="false" afterPath="$PROJECT_DIR$/es6/babel.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jenkins/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AST学习/p1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/AST学习/p1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础学习/arrayBuffer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/基础学习/arrayBuffer/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +17,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="MD" />
+        <option value="HTML File" />
         <option value="md" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -36,7 +38,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,19 +47,42 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Npm_files\xl_study\gp" />
-      <recent name="D:\Npm files\xl_study\typescript" />
-      <recent name="D:\Npm files\xl_study\css3重温和学习" />
-      <recent name="D:\Npm files\xl_study\node\框架分析\express" />
-      <recent name="D:\Npm files\xl_study\node\核心模块" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Npm_files\xl_study\css3重温和学习\postcss" />
       <recent name="D:\Npm files\xl_study\pm2" />
       <recent name="D:\Npm files\xl_study\pm2\p1" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Npm_files\xl_study\docker" />
+      <recent name="D:\Npm_files\xl_study\行业基础描述\xjj" />
+      <recent name="D:\Npm_files\xl_study\行业基础描述\新基建" />
+      <recent name="D:\Npm_files\xl_study\规范" />
+      <recent name="D:\Npm_files\xl_study\css3重温和学习" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/docker/index.js" working-dir="$PROJECT_DIR$/docker">
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/docker/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -141,7 +166,25 @@
       <workItem from="1595903760165" duration="3667000" />
       <workItem from="1598942657754" duration="5045000" />
       <workItem from="1600050948884" duration="7232000" />
-      <workItem from="1600766313701" duration="66000" />
+      <workItem from="1600766313701" duration="38237000" />
+      <workItem from="1600941552251" duration="1447000" />
+      <workItem from="1600950623572" duration="640000" />
+      <workItem from="1601189963022" duration="1881000" />
+      <workItem from="1601202323599" duration="3565000" />
+      <workItem from="1603435044789" duration="46000" />
+      <workItem from="1605082652842" duration="3067000" />
+      <workItem from="1607569576597" duration="3625000" />
+      <workItem from="1607666640801" duration="2276000" />
+      <workItem from="1608216267200" duration="2145000" />
+      <workItem from="1608643520276" duration="2439000" />
+      <workItem from="1609141600924" duration="7559000" />
+      <workItem from="1609740255663" duration="2039000" />
+      <workItem from="1610365673873" duration="10000" />
+      <workItem from="1610366583350" duration="1229000" />
+      <workItem from="1610505684293" duration="1733000" />
+      <workItem from="1610525351468" duration="196000" />
+      <workItem from="1611296515985" duration="2673000" />
+      <workItem from="1612250784193" duration="5274000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>
@@ -157,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591352177300</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="提交">
+      <created>1600766448537</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600766448537</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,28 +217,37 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="m" />
     <MESSAGE value="呼吸效果/悬浮效果" />
-    <option name="LAST_COMMIT_MESSAGE" value="呼吸效果/悬浮效果" />
+    <MESSAGE value="提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="769" y="257" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594264226322">
+    <state x="708" y="302" key="FileChooserDialogImpl" timestamp="1609141894843">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="257" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594264226322" />
-    <state x="567" y="313" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1594264241783">
+    <state x="708" y="302" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609141894843" />
+    <state width="1877" height="463" key="GridCell.Tab.0.bottom" timestamp="1612258062894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="313" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594264241783" />
-    <state x="708" y="302" key="FileChooserDialogImpl" timestamp="1598943533609">
+    <state width="1877" height="463" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612258062894" />
+    <state width="1877" height="463" key="GridCell.Tab.0.center" timestamp="1612258062893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="708" y="302" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598943533609" />
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600766417207">
+    <state width="1877" height="463" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612258062893" />
+    <state width="1877" height="463" key="GridCell.Tab.0.left" timestamp="1612258062893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600766417207" />
-    <state x="947" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1600066495682">
+    <state width="1877" height="463" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612258062893" />
+    <state width="1877" height="463" key="GridCell.Tab.0.right" timestamp="1612258062894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="947" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600066495682" />
+    <state width="1877" height="463" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612258062894" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612265393677">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612265393677" />
+    <state x="947" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1609145678735">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="947" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609145678735" />
   </component>
 </project>

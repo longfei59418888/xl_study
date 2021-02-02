@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+
+        const loadScript = (url, ck) => {
+            const node = document.createElement('script');
+            node.type = 'text/javascript';
+            node.charset = 'utf-8';
+            node.async = true;
+            document.querySelector('head').appendChild(node)
+            node.src = url;
+            node.onload = () => {}
+        }
+        let moduleName = 'entry'
+        let depName = 'entry'
+        window.define = function (depends, func) {
+            new Module(depName, depends, func)
+        }
+        const modules = {}
+        class Module {
+            constructor(name, depends, func) {
+                this.func = func
+                this.name = name
+                this.depends = depends
+                this.deps = []
+                this.parent = moduleName
+                modules[depName] = this
+                if (depends.length < 1) {
+                    const res = func()
+                    const module = modules[moduleName]
+                    module.resolve(this.name, res)
+                } else {
+                    let item = depends.shift()
+                    depName = item
+                    moduleName = this.name
+                    loadScript(item, () => {
+                    })
+                }
+            }
+
+            resolve(name, module) {
+                this.deps.push(module)
+                if (this.depends.length > 0) {
+                    let item = this.depends.shift()
+                    depName = item
+                    moduleName = this.name
+                    loadScript(item, () => {
+                    })
+                } else {
+                    const res = this.func.apply(null, this.deps)
+
+                    if (this.name === this.parent) return
+                    const module = modules[this.parent]
+                    module.resolve(this.name, res)
+                }
+            }
+        }
+
+        window.require = function (depends = [], func) {
+            const module = new Module(moduleName, depends, func)
+        }
+        require(['./test.js', './test4.js'], (t1, t2) => {
+            console.log('end' + t1 + t2)
+        })
+
+    </script>
+</head>
+<body>
+</body>
+</html>
