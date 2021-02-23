@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2-docker start index.js --name test",
-    "start2": "node index.js",
+    "start": "npm install && pm2-docker ecosystem.config.js",
+    "start3": "pm2 start ecosystem.config.js",
+    "start2": "npm install && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
