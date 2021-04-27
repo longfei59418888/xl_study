@@ -13,4 +13,6 @@
     + useEffect
         + 相当于 componentDidMount 和 componentDidUpdate
         + 更新 Dom 完成
+        + 返回一个回调函数，用于清除effect，也就卸载的时候执行
+    
     

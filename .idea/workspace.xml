@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nestjs/管道.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nestjs/装饰器.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/typescript/保留关键字.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/Dockerfile2.dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/Dockerfile2.dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/docker/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/docker/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/hook.md" beforeDir="false" afterPath="$PROJECT_DIR$/react/hook.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,7 @@
         <option value="HTML File" />
         <option value="md" />
         <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -26,17 +28,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1aYmJTTK6MmJsMUFohDOlUFY53H" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/typescript" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -46,23 +57,28 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/typescript" />
+      <recent name="$PROJECT_DIR$/git 官网学习/p3" />
+      <recent name="$PROJECT_DIR$/nestjs" />
+      <recent name="D:\Npm_files\xl_study\docker" />
+      <recent name="D:\Npm_files\xl_study\行业基础描述\xjj" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Npm_files\xl_study\css3重温和学习\postcss" />
       <recent name="D:\Npm files\xl_study\pm2" />
       <recent name="D:\Npm files\xl_study\pm2\p1" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Npm_files\xl_study\docker" />
-      <recent name="D:\Npm_files\xl_study\行业基础描述\xjj" />
-      <recent name="D:\Npm_files\xl_study\行业基础描述\新基建" />
-      <recent name="D:\Npm_files\xl_study\规范" />
-      <recent name="D:\Npm_files\xl_study\css3重温和学习" />
-    </key>
   </component>
-  <component name="RunManager" selected="npm.start3">
+  <component name="RunManager" selected="Node.js.rxjs.js">
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/docker/index.js" working-dir="$PROJECT_DIR$/docker">
+      <method v="2" />
+    </configuration>
+    <configuration name="rxjs.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/nestjs/rxjs.js" working-dir="$PROJECT_DIR$/nestjs">
       <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -87,6 +103,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.rxjs.js" />
         <item itemvalue="npm.start3" />
         <item itemvalue="npm.start" />
         <item itemvalue="Node.js.index.js" />
@@ -105,6 +122,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -194,6 +212,10 @@
       <workItem from="1610525351468" duration="196000" />
       <workItem from="1611296515985" duration="2673000" />
       <workItem from="1612250784193" duration="16009000" />
+      <workItem from="1616406999998" duration="8758000" />
+      <workItem from="1617868196627" duration="642000" />
+      <workItem from="1617932078821" duration="1377000" />
+      <workItem from="1619493945754" duration="3473000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>
@@ -227,7 +249,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -235,43 +257,5 @@
     <MESSAGE value="呼吸效果/悬浮效果" />
     <MESSAGE value="提交" />
     <option name="LAST_COMMIT_MESSAGE" value="提交" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1614070754086">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1614070754086" />
-    <state x="708" y="302" key="FileChooserDialogImpl" timestamp="1612425698474">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="708" y="302" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612425698474" />
-    <state width="1877" height="463" key="GridCell.Tab.0.bottom" timestamp="1612433992045">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="463" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612433992045" />
-    <state width="1877" height="463" key="GridCell.Tab.0.center" timestamp="1612433992045">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="463" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612433992045" />
-    <state width="1877" height="463" key="GridCell.Tab.0.left" timestamp="1612433992044">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="463" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612433992044" />
-    <state width="1877" height="463" key="GridCell.Tab.0.right" timestamp="1612433992045">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="463" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612433992045" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612265501600">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612265501600" />
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612265393677">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612265393677" />
-    <state x="947" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1609145678735">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="947" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609145678735" />
   </component>
 </project>
