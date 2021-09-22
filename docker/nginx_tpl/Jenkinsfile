@@ -1,0 +1,33 @@
+pipeline {
+  agent none
+//   triggers {
+//     pollSCM 'H/5 * * * *'
+//   }
+  stages {
+    stage('Test') {
+        sh 'chmod +x ci.sh'
+        sh './ci.sh test'
+    }
+    stage('Build') {
+        sh 'chmod +x ci.sh'
+        sh './ci.sh build'
+    }
+    stage('Approve of Deploy UAT') {
+        steps {
+            input message: 'deploy?'
+        }
+    }
+
+    stage('deploy') {
+        steps {
+            withKubeConfig([
+                credentialsId: '12345678',
+                serverUrl: 'https://172.16.173.130:6443',
+                contextName: 'kubernetes-admin'
+            ]) {
+                sh 'chmod +x ci.sh'
+                sh './ci.sh deploy'
+            }
+        }
+    }
+}

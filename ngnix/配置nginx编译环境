@@ -1,0 +1,5 @@
+#### 环境
+- 用 configure 来配置 nginx 环境
+    - --prefix=path nginx服务文件路径  默认 值是/usr/local/nginx
+    - --sbin-path=path   nginx可执行文件的完整路径 默认 prefix/sbin/nginx
+    - 

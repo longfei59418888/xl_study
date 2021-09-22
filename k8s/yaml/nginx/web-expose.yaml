@@ -1,0 +1,59 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2021-09-02T03:50:36Z"
+  labels:
+    app: web1
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:app: {}
+      f:spec:
+        f:externalTrafficPolicy: {}
+        f:ports:
+          .: {}
+          k:{"port":80,"protocol":"TCP"}:
+            .: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+        f:selector:
+          .: {}
+          f:app: {}
+        f:sessionAffinity: {}
+        f:type: {}
+    manager: kubectl-expose
+    operation: Update
+    time: "2021-09-02T03:50:36Z"
+  name: web1
+  namespace: default
+  resourceVersion: "450279"
+  selfLink: /api/v1/namespaces/default/services/web1
+  uid: 67d3c584-c8f1-47de-bb17-2e46d2aa1b6b
+# 资源描述
+spec:
+  clusterIP: 10.110.156.174
+  externalTrafficPolicy: Cluster
+  ports:
+    # 外部访问端口
+  - nodePort: 31243
+    # 目标端口,主机端口
+    port: 8080
+    # 协议
+    protocol: TCP
+    # pod 内部端口
+    targetPort: 80
+  selector:
+    app: web
+  sessionAffinity: None
+  # 类型
+  # 公有云/对外：LoadBalancer
+  # 集群内部使用：ClusterIP
+  # 对外暴漏：NodePort
+  type: NodePort
+status:
+  loadBalancer: {}

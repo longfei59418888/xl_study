@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: k8s-nginx
+  name: k8s-nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-nginx
+  template:
+    metadata:
+      labels:
+        app: k8s-nginx
+    spec:
+      containers:
+        - image: 172.16.173.138:8088/test/cicd:$GIT_COMMIT
+          name: cicd-$GIT_COMMIT
+          resources: { }
+status: { }
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: k8s-nginx-svc
+  name: k8s-nginx-svc
+spec:
+  ports:
+    - nodePort: 31242
+      port: 8088
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: k8s-nginx
+  type: NodePort
+
+---
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: web-nginx-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: k8s.nginx.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: k8s-nginx-svc
+              servicePort: 8088

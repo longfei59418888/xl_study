@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+# Deployment 用来创建多个类型
+kind: Deployment
+# 元数据(用来描述数据的数据[数据类型，历史数据])
+metadata:
+  # Deployment 生成的时间
+  creationTimestamp: null
+  # 自定义标签，数个数组
+  labels:
+    app: web
+  # 当前 pod 的名称
+  name: web
+# 当前 pod 的描述
+spec:
+  # 三个副本
+  replicas: 3
+  # 选择的副本
+  selector:
+    # 选择标签名称
+    matchLabels:
+      app: web
+  # 部署策略
+  # recreate:重建,停掉当前的重新构建
+  # rolling-update: 滚动更新
+  # 蓝绿(blue/green): 蓝绿切换流量
+  # canary: 灰度
+  # a/b testing:
+  strategy: {}
+  # 模版
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: web
+    # 描述
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
+status: {}

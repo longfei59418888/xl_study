@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docker/nginx_tpl/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/docker/nginx" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -33,6 +36,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1aYmJTTK6MmJsMUFohDOlUFY53H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/k8s/yaml/nginx" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -58,16 +62,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/k8s/yaml/nginx" />
+      <recent name="$PROJECT_DIR$/tpl" />
+      <recent name="$PROJECT_DIR$/k8s" />
       <recent name="$PROJECT_DIR$/jwt" />
       <recent name="$PROJECT_DIR$/curl" />
-      <recent name="$PROJECT_DIR$/typescript" />
-      <recent name="$PROJECT_DIR$/git 官网学习/p3" />
-      <recent name="$PROJECT_DIR$/nestjs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/k8s/yaml/gitlab" />
+      <recent name="$PROJECT_DIR$/k8s/yaml/gitlab/config" />
+      <recent name="$PROJECT_DIR$/k8s/yaml" />
+      <recent name="$PROJECT_DIR$/k8s/yaml/nginx" />
       <recent name="D:\Npm_files\xl_study\css3重温和学习\postcss" />
-      <recent name="D:\Npm files\xl_study\pm2" />
-      <recent name="D:\Npm files\xl_study\pm2\p1" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.demo2.js">
@@ -222,7 +228,15 @@
       <workItem from="1621764910409" duration="1930000" />
       <workItem from="1622949568669" duration="1839000" />
       <workItem from="1623143927082" duration="687000" />
-      <workItem from="1627058236175" duration="514000" />
+      <workItem from="1627058236175" duration="1103000" />
+      <workItem from="1628045261813" duration="7015000" />
+      <workItem from="1628213070392" duration="476000" />
+      <workItem from="1628649193064" duration="6909000" />
+      <workItem from="1629080830499" duration="43122000" />
+      <workItem from="1630834186197" duration="14514000" />
+      <workItem from="1631514860169" duration="45000" />
+      <workItem from="1631515144910" duration="33617000" />
+      <workItem from="1632276200813" duration="3083000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>
@@ -259,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619501334744</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="提交">
+      <created>1627058777170</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627058777171</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
