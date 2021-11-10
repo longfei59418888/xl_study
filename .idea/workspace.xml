@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/nginx_tpl/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/nginx/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,15 +15,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="MD" />
-        <option value="HTML File" />
         <option value="md" />
         <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/docker/nginx" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -236,7 +235,9 @@
       <workItem from="1630834186197" duration="14514000" />
       <workItem from="1631514860169" duration="45000" />
       <workItem from="1631515144910" duration="33617000" />
-      <workItem from="1632276200813" duration="3083000" />
+      <workItem from="1632276200813" duration="7184000" />
+      <workItem from="1632725714413" duration="4067000" />
+      <workItem from="1634869327019" duration="1319000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>
