@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/nginx" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/nginx/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/README.md" afterDir="false" />
     </list>
@@ -238,6 +237,7 @@
       <workItem from="1632276200813" duration="7184000" />
       <workItem from="1632725714413" duration="4067000" />
       <workItem from="1634869327019" duration="1319000" />
+      <workItem from="1636593579939" duration="568000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>
