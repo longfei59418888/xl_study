@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docker/nginx" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/k8s/yaml/nginx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jenkins" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,11 +59,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jenkins" />
+      <recent name="$PROJECT_DIR$/nestjs" />
       <recent name="$PROJECT_DIR$/k8s/yaml/nginx" />
       <recent name="$PROJECT_DIR$/tpl" />
       <recent name="$PROJECT_DIR$/k8s" />
-      <recent name="$PROJECT_DIR$/jwt" />
-      <recent name="$PROJECT_DIR$/curl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/k8s/yaml/gitlab" />
@@ -238,6 +237,9 @@
       <workItem from="1632725714413" duration="4067000" />
       <workItem from="1634869327019" duration="1319000" />
       <workItem from="1636593579939" duration="568000" />
+      <workItem from="1637047218266" duration="59000" />
+      <workItem from="1637047732987" duration="1231000" />
+      <workItem from="1637120057096" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>
@@ -281,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627058777171</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="提交">
+      <created>1637047250847</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637047250847</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
