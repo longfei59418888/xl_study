@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "standard"
+  ],
+  "rules": {
+    "eslint-test/vue-component": "error"
+  },
+  //  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    //    "@typescript-eslint",
+    //    "typescript",
+    "eslint-test"
+  ],
+  //  "parserOptions": {
+  //    "ecmaFeatures": {
+  //      "jsx": true
+  //    },
+  //    "useJSXTextNode": true,
+  //    "project": "./tsconfig.json"
+  //  },
+  "env": {
+    "jest": true
+  }
+}

@@ -1,0 +1,45 @@
+#### screen
+
+- 全局的 document.body
+
+```
+screen.getByRole('button',{})
+```
+
+#### getBy[name]
+
+- Role
+- Text
+- Label
+- Title
+
+#### queryBy[name]
+
+#### findBy[name]
+
+```
+getByRole(container,'button')
+```
+
+#### 异步
+
+```
+const button = screen.getByRole('button', {name: 'Click Me'})
+fireEvent.click(button)
+await screen.findByText('Clicked once')
+fireEvent.click(button)
+await screen.findByText('Clicked twice')
+```
+
+```
+function waitFor<T>(
+  callback: () => T | Promise<T>,
+  options?: {
+    container?: HTMLElement
+    timeout?: number
+    interval?: number
+    onTimeout?: (error: Error) => Error
+    mutationObserverOptions?: MutationObserverInit
+  },
+): Promise<T>
+```

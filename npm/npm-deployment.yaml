@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+# Deployment 用来创建多个类型
+kind: Deployment
+# 元数据(用来描述数据的数据[数据类型，历史数据])
+metadata:
+  # Deployment 生成的时间
+  creationTimestamp: null
+  # 自定义标签，数个数组
+  labels:
+    app: npm-deployment
+  # 当前 pod 的名称
+  name: npm-deployment
+# 当前 pod 的描述
+spec:
+  # 三个副本
+  replicas: 1
+  # 选择的副本
+  selector:
+    # 选择标签名称
+    matchLabels:
+      app: npm-deployment
+  # 模版
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: npm-deployment
+    # 描述
+    spec:
+      containers:
+      - image: verdaccio/verdaccio
+        name: verdaccio
+        imagePullPolicy: Always
+        ports:
+          - name: npm-web
+            containerPort: 4873 # 对service 暴漏端口

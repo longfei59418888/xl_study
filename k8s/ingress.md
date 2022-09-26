@@ -4,6 +4,7 @@
 
 #### 工作流程
 - kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/mandatory.yaml
+- kubectl apply -f ./nginx-ingress
 - 部署 ingress 通过yaml文件部署 （ingress-controller.yaml）
 - 配置规则
 - 步骤

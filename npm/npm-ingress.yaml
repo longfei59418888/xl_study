@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: npm-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: k8s.test.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: npm-service
+              servicePort: 4873

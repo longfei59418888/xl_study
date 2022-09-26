@@ -2,4 +2,32 @@
 - 用 configure 来配置 nginx 环境
     - --prefix=path nginx服务文件路径  默认 值是/usr/local/nginx
     - --sbin-path=path   nginx可执行文件的完整路径 默认 prefix/sbin/nginx
-    - 
+    
+
+
+#### 变量
+- args/query_string ：请求行中的参数，/test?type=1
+- content_length ：请求头中的 Content_Length
+- content_type ：请求头中的 Content_type
+- document_uri/uri ：request中的URI，即请求行中的 uri，资源位置
+- host：请求头中的 Host ，主机
+- limit_rate：限速
+- request_method：请求方法
+- remote_addr：客户端IP
+- remote_port：客户端端口号
+- request_filename：请求文件名称
+- request_uri：完整的请求uri
+- server_protocol：协议
+- scheme：协议
+- server_addr：request到达的server的ip，服务ip
+- server_name：请求到达的服务器名
+- server_port：请求到达的服务器的端口号
+
+
+#### 其他
+- uri/url
+  - url：
+      - 统一资源定位符，特殊的 uri ，用于查找
+      - 组成 [协议]://[域名或ip]:[端口]/[路径]/[资源名称]#[冒点]?[参数]
+  - uri：
+    - 统一资源标识符，用于标识

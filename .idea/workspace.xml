@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="">
+    <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="提交">
+      <change afterPath="$PROJECT_DIR$/eslint/lib/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git 官网学习/cicd/gitlab-ci.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gitlab/.gitlab-ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gitlab/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gitlab/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/nginx-ingress" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/调度策略-亲和性.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown/时序图.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ngnix/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/npm/npm-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/npm/npm-ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/npm/npm-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/npm/私服搭建 k8s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/计算机网络/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/计算机网络/img_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git 官网学习/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/git 官网学习/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript基础/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript基础/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/ingress.md" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/ingress.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/搭建简易集群.md" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/搭建简易集群.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux学习/cmd.md" beforeDir="false" afterPath="$PROJECT_DIR$/linux学习/cmd.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nestjs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/nestjs/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ngnix/配置nginx编译环境" beforeDir="false" afterPath="$PROJECT_DIR$/ngnix/配置nginx编译环境" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typescript/保留关键字.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/typescript/保留关键字.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/单元测试/jest.md" beforeDir="false" afterPath="$PROJECT_DIR$/单元测试/jest.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +47,10 @@
         <option value="MD" />
         <option value="md" />
         <option value="TypeScript JSX File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -44,7 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jenkins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gitlab" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,50 +88,58 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/nestjs/demo/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gitlab" />
+      <recent name="$PROJECT_DIR$/gitlab/cicd01" />
       <recent name="$PROJECT_DIR$/jenkins" />
-      <recent name="$PROJECT_DIR$/nestjs" />
-      <recent name="$PROJECT_DIR$/k8s/yaml/nginx" />
-      <recent name="$PROJECT_DIR$/tpl" />
-      <recent name="$PROJECT_DIR$/k8s" />
+      <recent name="$PROJECT_DIR$/计算机网络" />
+      <recent name="$PROJECT_DIR$/基础学习" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/k8s/yaml/gitlab" />
-      <recent name="$PROJECT_DIR$/k8s/yaml/gitlab/config" />
-      <recent name="$PROJECT_DIR$/k8s/yaml" />
-      <recent name="$PROJECT_DIR$/k8s/yaml/nginx" />
-      <recent name="D:\Npm_files\xl_study\css3重温和学习\postcss" />
+      <recent name="$PROJECT_DIR$/eslint/src" />
+      <recent name="$PROJECT_DIR$/spring/spring boot/mvc" />
+      <recent name="$PROJECT_DIR$/spring/spring boot" />
+      <recent name="$PROJECT_DIR$/nestjs/demo" />
+      <recent name="$PROJECT_DIR$/nestjs/demo/dist" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.demo2.js">
-    <configuration name="demo1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/jwt/demo1.js" working-dir="$PROJECT_DIR$/jwt">
+  <component name="RunManager" selected="Node.js.index.js">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="demo2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/jwt/demo2.js" working-dir="$PROJECT_DIR$/jwt">
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/nestjs/test.js" working-dir="$PROJECT_DIR$/nestjs">
       <method v="2" />
     </configuration>
-    <configuration name="rxjs.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/nestjs/rxjs.js" working-dir="$PROJECT_DIR$/nestjs">
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/docker/package.json" />
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/eslint/package.json" />
       <command value="run" />
       <scripts>
-        <script value="start" />
+        <script value="lint" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start3" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/docker/package.json" />
+    <configuration name="prebuild" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/nestjs/demo/package.json" />
       <command value="run" />
       <scripts>
-        <script value="start3" />
+        <script value="prebuild" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/nestjs/demo/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -105,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.demo2.js" />
-        <item itemvalue="Node.js.demo1.js" />
-        <item itemvalue="Node.js.rxjs.js" />
-        <item itemvalue="npm.start3" />
-        <item itemvalue="npm.start" />
+        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.prebuild" />
+        <item itemvalue="Node.js.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +281,57 @@
       <workItem from="1636593579939" duration="568000" />
       <workItem from="1637047218266" duration="59000" />
       <workItem from="1637047732987" duration="1231000" />
-      <workItem from="1637120057096" duration="16000" />
+      <workItem from="1637120057096" duration="281000" />
+      <workItem from="1637638124958" duration="9344000" />
+      <workItem from="1637749424135" duration="508000" />
+      <workItem from="1638176210432" duration="7270000" />
+      <workItem from="1638323311984" duration="6770000" />
+      <workItem from="1638344105207" duration="20417000" />
+      <workItem from="1638783032203" duration="568000" />
+      <workItem from="1638939612030" duration="367000" />
+      <workItem from="1639449041933" duration="1160000" />
+      <workItem from="1641811914158" duration="11304000" />
+      <workItem from="1642131296048" duration="2022000" />
+      <workItem from="1642412084650" duration="733000" />
+      <workItem from="1642749460432" duration="3846000" />
+      <workItem from="1642753930643" duration="14176000" />
+      <workItem from="1644461582940" duration="3495000" />
+      <workItem from="1644982448070" duration="6299000" />
+      <workItem from="1646625861837" duration="8460000" />
+      <workItem from="1646788873029" duration="1628000" />
+      <workItem from="1647402820996" duration="11390000" />
+      <workItem from="1648698172267" duration="3576000" />
+      <workItem from="1648885759018" duration="2415000" />
+      <workItem from="1649661398794" duration="593000" />
+      <workItem from="1649990347874" duration="612000" />
+      <workItem from="1649992941606" duration="17741000" />
+      <workItem from="1650425590608" duration="175000" />
+      <workItem from="1650767604194" duration="9323000" />
+      <workItem from="1651906101643" duration="1929000" />
+      <workItem from="1652692105385" duration="6830000" />
+      <workItem from="1652888316028" duration="2339000" />
+      <workItem from="1653033494912" duration="9929000" />
+      <workItem from="1653481305560" duration="2634000" />
+      <workItem from="1653892520891" duration="1150000" />
+      <workItem from="1654138359743" duration="598000" />
+      <workItem from="1656485631392" duration="4056000" />
+      <workItem from="1656989625866" duration="6453000" />
+      <workItem from="1657100361647" duration="409000" />
+      <workItem from="1657103383580" duration="1179000" />
+      <workItem from="1657598059790" duration="1364000" />
+      <workItem from="1658936909483" duration="18000" />
+      <workItem from="1658936944526" duration="31000" />
+      <workItem from="1659925709998" duration="2276000" />
+      <workItem from="1659934241500" duration="17000" />
+      <workItem from="1659934282419" duration="20785000" />
+      <workItem from="1661391993902" duration="511000" />
+      <workItem from="1662951877367" duration="12380000" />
+      <workItem from="1663125595216" duration="4012000" />
+      <workItem from="1663210461332" duration="91000" />
+      <workItem from="1663642416563" duration="2732000" />
+      <workItem from="1663729173196" duration="11699000" />
+      <workItem from="1663906882332" duration="3798000" />
+      <workItem from="1663925488578" duration="10937000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>
@@ -290,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637047250847</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="提交">
+      <created>1637120086866</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637120086866</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,5 +401,9 @@
     <MESSAGE value="呼吸效果/悬浮效果" />
     <MESSAGE value="提交" />
     <option name="LAST_COMMIT_MESSAGE" value="提交" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

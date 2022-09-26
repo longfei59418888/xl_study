@@ -1,0 +1,42 @@
+#### fireEvent
+
+```
+fireEvent(
+  getByText(container, 'Submit'),
+  new MouseEvent('click', {
+    bubbles: true,
+    cancelable: true,
+  }),
+)
+
+```
+
+#### fireEvent[eventName](node: HTMLElement, eventProperties: Object)
+
+```
+fireEvent.change(input, {target: {value: '24/05/2020'}})
+fireEvent.keyDown(domNode, {key: 'Enter', code: 'Enter', charCode: 13})
+```
+
+#### createEvent[eventName](node: HTMLElement, eventProperties: Object)
+
+```
+const myEvent = createEvent.click(node, {button: 2})
+fireEvent(node, myEvent)
+
+
+// simulate the 'input' event on a file input
+fireEvent(
+  input,
+  createEvent('input', input, {
+    target: {files: inputFiles},
+    ...init,
+  }),
+)
+```
+
+
+
+
+
+

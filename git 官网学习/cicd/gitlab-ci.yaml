@@ -1,0 +1,91 @@
+# 默认
+default:
+  # 所有job执行之后/之前执行
+  after_script:
+    - echo "一个 Job 执行结束"
+  before_script:
+    - echo "一个 Job 执行开始"
+  # docker 镜像
+  image:
+    name: node:14
+    entrypoint: [ "/bin/bash" ]
+  # 添加服务
+  services:
+    - name: my-postgres:11.7
+      alias: db-postgres
+      entrypoint: [ "/usr/local/bin/db-postgres" ]
+      command: [ "start" ]
+  # 新的提交中断 pipeline
+  interruptible: true
+  # 重试次数
+  retry: 2
+  # runner’s tags
+  tags: node
+# 多个 yaml 文件组合
+include:
+  # 位置
+  - local: '/templates/.gitlab-ci-template.yml'
+  # 配置不同的 yaml
+  - project: 'my-group/my-project'
+    # 分支名称/标签tag/commitId
+    ref: main
+    file: '/templates/.gitlab-ci-template.yml'
+  - project: 'my-group/my-project'
+    ref: v1.0.0
+    file: '/templates/.gitlab-ci-template.yml'
+# 步骤 .pre 第一个执行，.post 最后一个执行
+stages:
+  - test
+  - build
+  - deploy
+# 整个构建
+workflow:
+  # 规则
+  rules:
+    - if: $CI_COMMIT_MESSAGE =~ /-draft$/
+    # when: never 不执行
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    # 当 $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH 相等的时候
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      设置全局变量 DEPLOY_VARIABLE = deploy-production
+      variables:
+        DEPLOY_VARIABLE: "deploy-production"
+    # 永远执行
+    - when: always
+job0:
+  stage: build
+# 一个任务
+job1:
+  # 执行测试步骤
+  stage: test
+  # 执行脚本
+  script:
+    - echo "test"
+  # 依赖某个任务
+  dependencies:
+    - job0
+  # 条件--只有/排除什么条件的情况下执行
+  only/except:
+    # api 触发
+    - api
+    # 某个分支名称，可以用正则
+    - branches
+    refs:
+      - branches
+    # 变量
+    variables:
+      - $RELEASE == "staging"
+      - $STAGING
+    # 文件变化
+    changes:
+      - Dockerfile
+  # 继承合并某一个任务
+  extends: job0
+  retry:
+  rules:
+  variables:
+  when:
+
+
+
+

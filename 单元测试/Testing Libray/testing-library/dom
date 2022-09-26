@@ -1,0 +1,11 @@
+#### 安装
+
+```
+npm install --save-dev @testing-library/dom
+npm install --save-dev jsdom global-jsdom
+```
+
+#### react
+```
+npm install --save-dev @testing-library/react
+```

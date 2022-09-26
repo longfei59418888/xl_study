@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<article class="article fmt article-content "><h1 id="item-1">前言</h1>
+    <p>在研发周期紧张的背景下,切记要避免时间开销在<code>无用</code>工作上 (比如造轮子) 如何有效确认是否已有轮子,本篇文章做一个list来帮助大家。只需要记住下面的库就可以解决工作中95%日常问题。</p>
+    <blockquote>以下所有链接均为源代码仓库 。</blockquote>
+    <h1 id="item-2">- ---</h1>
+    <h2 id="item-2-1">编辑器</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=Wu2TmXEHYE4JIzEkwuYgnw%3D%3D.t48lEwf1on3jKlCI%2FXASaWAsSNP3VIr4l4%2F3goaLz9w%3D"
+               rel="nofollow" target="_blank">ace</a>：Ace ，即 Ajax.org Cloud9 Editor。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=fH3qnGA%2FJ8tH3aKPHG5v4Q%3D%3D.eIbOVOY2AJMuW%2Bebgycw1TEqXdix3GPPFk2xXu3HuV48cn36FkERQ2mOLTqK%2FMHC"
+               rel="nofollow" target="_blank">CodeMirror</a>：一个浏览器端的代码编辑器，用 JS 实现。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=iYCxMUBQJa1ieI6xMBw%2FHQ%3D%3D.Kf2c9bdjbsCK8mrLVTnKK6F1hE%2BONcvF9uKUZLzQMJDDoPW0tREeCSfVny2EBogU"
+               rel="nofollow" target="_blank">esprima</a>：用于多用途分析的 ECMAScript 解析器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=XJ0vr3G9iWmvrjn4AQ46ng%3D%3D.FADfVOMNlwKoEtpbBmHZsFkIrQj5FGEdzrx4qIgmJVDKXBSPAN6xfKVVvOtZ3g%2BP"
+               rel="nofollow" target="_blank">quill</a>：一个带有 API 的跨浏览器富文本编辑器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=dhPMwhBHblm2CZHzMjh0lg%3D%3D.MXHhcrYhWlNcFPtNxyH8i%2FlvlQxvqtBIgGehyvNHGUcK5Zuv1cGdnmQJGHsM9OHC"
+               rel="nofollow" target="_blank">medium-editor</a>：Medium.com 使用的所见即所得编辑器的克隆版。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=lEnCY5E0CjN5uaK8cu8SyA%3D%3D.wf6f6auYociiYfy4e7pHI%2FRXsnMZXyF0f6%2FYQRkIOK8%3D"
+               rel="nofollow" target="_blank">pen</a>：享受在线编辑（支持 markdown）。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=2bxmS0uNWKLx%2F4z9m91T1g%3D%3D.WPfU8a%2FBlhcxjqbVvQ%2FJWGjhEWEqKlf%2FsVeue0RKMjCp31dqtwgx1ESLVkJmrw8Q%2FbGcvsUaqACSQHYnBxHXnA%3D%3D"
+               rel="nofollow" target="_blank">jquery-notebook</a>：一个易用的、简洁优雅的文本编辑器。灵感来源于 Medium。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=jPD7RPTwVs5Sx5UiP9nlLg%3D%3D.wsX4nbAPeqQzDxXbtKzBuICtKo2mtmMICXP8nqBlGpv2RQx%2F8GoZd1KQpIvZdEgF"
+               rel="nofollow" target="_blank">bootstrap-wysiwyg</a>：小巧的、兼容 bootstrap 的所见即所得的富文本编辑器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=%2FdUDPSZfLqXVWaGxjSjlwQ%3D%3D.5r3KvuNUCzRTaPLzhzQJF%2FnBU7K9PfqhaKHwxAVGqyyfS7545KBzioBujQlrTCsW"
+               rel="nofollow" target="_blank">ckeditor-releases</a>：适用于每个人的 web 文本编辑器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=vPZy0nHBuRiUn4AXCVfR8w%3D%3D.slkxNhTgTPeBM9%2Bn6cMEZWhCyeZwb9VOM9HL%2B3%2BKEYV2wkvcGnu5T%2F%2FGT1q1IGuy"
+               rel="nofollow" target="_blank">editor</a>：一个 markdown 编辑器，但仍在开发中。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=0pz0odj6Wi70ylfuCOWNzA%3D%3D.%2F%2BUSvOeXPQIu%2FfM1g7EsBC2vYbSHisX8rVsL2s7otEAfh%2Bf2NGz4azrEyiW823nk"
+               rel="nofollow" target="_blank">EpicEditor</a>：一个可嵌入的 JavaScript Markdown 的编辑器，拥有分屏编辑、即时预览、自动保存草稿和离线支持等功能。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=igEWkSLi%2B3F8SeM%2BKJva2A%3D%3D.HDu3w3zlLrOPodaXgNUo%2F2FM8tthpBoAeXPpxsF%2FDc1mBtuFqmCDaFS80tovRW8v"
+               rel="nofollow" target="_blank">jsoneditor</a>：查看、编辑和格式化 JSON 的 web 工具。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=H7dOx6ICpIsUa3K9OEpc1Q%3D%3D.TpI9rkPnLH%2F7Z37O3JZ%2BEDxk94tKXYBO5iz4G01y0dwIUvg7DGYJrSv0KK2zCm48"
+               rel="nofollow" target="_blank">vim.js</a>：拥有持久化 ~/.vimrc 特性，支持 Vim 的 JavaScript 接口。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=hg2IB7oZ8A1JjKTtHqQfMA%3D%3D.IruVnJifA2s%2Bl7Nri8Q%2FWq0QSM4mdl3lUmE2dHYR9L4%3D"
+               rel="nofollow" target="_blank">Squire</a>：一个 HTML5 富文本编辑器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=gBqZbVUJVd8LNF4e2QxjMQ%3D%3D.V26JGPJR440IICWTQ8Xc1GjjPi%2F1xSSOrfofsL06WlEKmoXbjERatmbgbXfSVE6Y"
+               rel="nofollow" target="_blank">TinyMCE</a>：一个 JavaScript 富文本编辑器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=3KGJf670bHaP899mmXkxeQ%3D%3D.UmjVtMxRleXopy%2Buo7ZacT%2BYBwt2Hlw3b9LXIgQ3hq9VG3ELIEAdVg9pzelxi6zV"
+               rel="nofollow" target="_blank">trix</a>：由 Basecamp 制作，适用于每天写作的富文本编辑器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=2tXy1kqIt34in89EnbgE8A%3D%3D.PDgiJix464RnOqeK%2FWFklvp%2BFXkO7BySjXgRa%2FJZlZvubHlsbYmMqTo1rz%2FHqXHV"
+               rel="nofollow" target="_blank">Trumbowyg</a>：一款轻量且惊人的所见即所得 JavaScript 编辑器
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=gi7fmqIWt7f%2FPh4CfQmXKA%3D%3D.YS1zwLAduFRWXyahkl5Un5qOLmo%2BW5JfY3osPc0kchapeeZET1flIVaCR9bB7TlN"
+               rel="nofollow" target="_blank">Draft.js</a>：用于构建文本编辑器的 React 框架。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=svqUypUpbEGdd%2FIaz3HheA%3D%3D.nuRezxwRY4MWM%2F5mXNqHBsN4VL%2B%2BxdO6FPESWhAMS0Y7eXcfemBjSbZ%2FjWkDPcUUdEZQniiQSb68ohxAehTa1w%3D%3D"
+               rel="nofollow" target="_blank">bootstrap-wysihtml5</a>：一款简单漂亮的所见即所得编辑器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=E4BbXq9ef3%2F4Ec9nzCYbUg%3D%3D.nVCB7FP7jF6t6csllI5D7TJGEtUrgAsBLYXVKy5h8AgcMZmhh%2FJpJqPc2HGRdw1D"
+               rel="nofollow" target="_blank">wysihtml5</a>：基于 HTML5 ，渐进增强的开源富文本编辑器，利用非常严苛的规则旨在生成符合 HTML5
+            规范的标签，避免生成非规范标签和同行样式。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=%2BVTe71rzZAAszbfaP7SH4Q%3D%3D.tANROJFgl35lOYJQO32uLjeIv%2F4WEdIjXlEFjqBC1Sa%2FLmz09IeVsSNbFnRx9fGe"
+               rel="nofollow" target="_blank">raptor-editor</a>：Raptor，一款 HTML5 所见即所得内容编辑器！
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=zwjj1YjvGs9y%2BRu5l3b6MQ%3D%3D.PnRi0XdMz%2FMiX5MLWkcIXoJxBst4cJvdGU%2BNlJW6jRCdn%2B1NBAx%2B3Vah7mR1BG3k"
+               rel="nofollow" target="_blank">popline</a>：Popline 是一款 HTML5 富文本工具栏。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=zXV7MsKUJXBhJnt24tGkYA%3D%3D.p3cejE2Df9tjkUCjn8%2BQC6Muv3xak6dpcRyBchs7n8xvSfsmaIZg5jfb5V%2FH%2BEoZ"
+               rel="nofollow" target="_blank">Summernote</a>：一个极简的所见即所得编辑器。
+        </li>
+    </ul>
+    <h2 id="item-2-2">文档</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=VZtavTrS%2FY0UMsCf%2B93mdA%3D%3D.d0UwwA4hwfa8tSG0w5kCNU9JHehsFenyMCHCcq2oSFA%3D"
+               rel="nofollow" target="_blank">DevDocs</a>：一款多合一接口文档阅读器，界面统一、高效、排版精良。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=IcPqxD78%2Fz58TikreTqG1g%3D%3D.cDNdw4ZkkF8eX4BJqPnseUcNxhnT%2Fz%2B42crQyIIGtGI%3D"
+               rel="nofollow" target="_blank">dexy</a>：一款格式自由且文艺的文档工具，可用于编写任何包含代码的技术文档。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=QwQXefXYv6FCJuYMksB5Pg%3D%3D.FxVQy3zVphocerhSkD8l2qT52wexz%2BP4UyGsJMssH6WWaz5DNlE78kjTdW2AomU1"
+               rel="nofollow" target="_blank">docco</a>：一款快且脏、百来行、文艺范的文档生成器，用 Literate CoffeeScript 实现。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=O48zT7ZDF0cCiRkwDoewhw%3D%3D.LzM%2FJwZH%2Fk2NBVwvxYmPILWvLr%2FDT5Cz4YlhLVi7yfO74gSFSII757douquwUKiH"
+               rel="nofollow" target="_blank">styledocco</a>：根据样式表生成风格规范文档。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=B1DfqD7t3a4fZ%2FKhWXW%2Bzg%3D%3D.lZbKE%2Bzt7AbFYSm%2FvjWbG2SK1vsQcmgmfBrrjdamdab9NGyzVjxUIOMp2jfSwzID"
+               rel="nofollow" target="_blank">Ronn</a>：构建手册。把对人类阅读友好的简单文本文件转换成 roff 格式文件，便于终端显示，也可以转换为 HTML ，便于 Web 端显示。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=qadAJkAvk5CrowpqDSzMCQ%3D%3D.GqXkGqI5h%2BT%2BMalxpQmx5Q%2FxQZKeoZaze9dVQqZsY8s%3D"
+               rel="nofollow" target="_blank">dox</a>：一款 Node.js 开发的 JavaScript 文档生成器。Dox 不会生成结构样式严苛的文档，而是采用 JSON
+            表示法，以实现 markdown 和 JSDoc 风格标签。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=ONpKpCfK5LGs85K1cYuLMA%3D%3D.T2XyeWyXaEQ1jN3aWJYQKoW7CyxQff3foMC5HAs8u4LosWnKUYPssYMz21Y1Vuho"
+               rel="nofollow" target="_blank">jsdox</a>：一款将 JSDoc3 转换成 markdown 的文档生成器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=wbC%2Fgv84XLgRVubMpS3AJw%3D%3D.XFEBO%2F0LPRLiSdhK%2FPlwVq%2BsXcDHXU8Pre0p90jTWeI%3D"
+               rel="nofollow" target="_blank">ESDoc</a>：一款为 JavaScript 设计的优秀文档生成器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=tkH15s2DEZRju3tC%2BiwR%2BQ%3D%3D.w44T%2BhYaSh93pQns1kdCIkWVjrt%2BTdVtBeMnPVZROhY%3D"
+               rel="nofollow" target="_blank">YUIDoc</a>：一款提取源码注释生成接口文档的 Node.js 应用，功能类似 Javadoc and Doxygen 。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=GULdJwaRa3rZB9KHkgTJ1Q%3D%3D.vcM%2Fju9D780pe3SGS8IbKPJDf4o8aOy4M5Ir9fN9ynfmD%2FXIeCk3hqAWfw%2FVBkEz"
+               rel="nofollow" target="_blank">coddoc</a>：一款 jsdoc 解析库。Coddoc 与其他工具相比)的不同之处在于，它很容易扩展，通过
+            coddoc.addTagHandler 和 coddoc.addCodeHandler 来添加标签和代码解析器。 Coddoc 还可以解析源码生成接口文档。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=HikMd%2BBj65xG7jl18iIoqA%3D%3D.fNQz%2BF0%2FxuIf8Zfbr4gIpbTB7vCqC9Y9q6iSHcXcN80%3D"
+               rel="nofollow" target="_blank">sphinx</a>：一款让创建智能且漂亮文档更加简单的工具。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=EuQFfTCWHJBBbYIhZ9ka4w%3D%3D.7jGhn5zVjLi7knP4jR07Oldg0IJN5sTzOPpQR%2FnGKtc%3D"
+               rel="nofollow" target="_blank">Using JSDoc</a></li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=N7jSstVMXQb%2Ffu94IDMYqQ%3D%3D.yXdV9481iDmt8hJiWmv1LEzVM0PsfAU%2BeO%2BCmtcekx4%3D"
+               rel="nofollow" target="_blank">Beautiful docs</a>：一款 markdown 格式文档阅读器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=9qFXzKCip270%2B7PZ3Y94JQ%3D%3D.2RJcpFr0XRaawBwLq6Hpoz%2B33cTA2D64N9ajChYPRys%3D"
+               rel="nofollow" target="_blank">documentation.js</a>：支持 ES2015+ 和流注释的接口文档生成器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=hT6zOu%2BIsa5dze3ij3aq8g%3D%3D.OWh8S%2FjjgWjvtKCLjvBoMSa43S%2BfuBiPmzkj1xyaT3ydEy4pG2VAog3HILOb4gVO"
+               rel="nofollow" target="_blank">jsduck</a>：为 Sencha JavaScript 框架开发的接口文档生成器，当然其他框架也能用。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=6oAws%2Fn4BESK2qgAytu9EQ%3D%3D.i5nGKwKhV3slS65vRswuLs%2FsrvA8H6wGebJoi0b4hesJY1KLuN1G1TO6FWZei%2FyD"
+               rel="nofollow" target="_blank">codecrumbs</a>：一款用于学习和记录代码库的可视化工具，通过在源码中插入面包屑来实现功能。
+        </li>
+    </ul>
+    <h2 id="item-2-3">文件</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=evEcZzvPwBscAoyK0Gl85g%3D%3D.be1L7RYarMf5pTCALYZe3H8GmOQF%2FFdouqhbMNGYSXoKOZm%2Fcki1K0UJf%2BK3AaCz"
+               rel="nofollow" target="_blank">Papa Parse</a>：一款强大的 CSV 库，支持解析 CSV 文件/字符串，也能导出 CSV。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=WBaLmn67lnBjJZycsJ3Cwg%3D%3D.B9kUbKntYQ3dpd9qX0duY%2Fw2v8D9bUa9zEkdEc%2BYI2EKrsllSgcAPdiA6clAQWHa"
+               rel="nofollow" target="_blank">jBinary</a>：对用声明式语法描述文件类型和数据结构的二进制文件，进行高级 I/O（加载、解析、操作、序列化、存储）操作。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=YpEJ%2B%2BRY3NPh4GaBqxspng%3D%3D.LdGXthqQ%2FL2i7iAmx6EDI%2FsXDSq8Soi2YwujeoNSfrMNb5SjZrRv10GhNDhlIthV"
+               rel="nofollow" target="_blank">diff2html</a>：git 差异输出解析器，也是 HTML 美化器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=ZPLFCBroiPfGyJQsCkNyoA%3D%3D.VGTSVrTMwRPZigwnRqFBzN7wCbt%2FbXHb%2BxXOQt6VrNI%3D"
+               rel="nofollow" target="_blank">jsPDF</a>：一款 JavaScript PDF 文件生成器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=87v9P4OOtMbSynSsH9Mmhw%3D%3D.1dUGvwh5ZgB0v4XImD97K0qNWXDsPpmdiXhqymkJCmXu8w5zuwkdLgC5%2F12YB9e4"
+               rel="nofollow" target="_blank">PDF.js</a>：一个 JavaScript PDF 阅读器，社区驱动，Mozilla 支持。
+        </li>
+    </ul>
+    <h2 id="item-2-4">函数式编程</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=xzos8K%2BlsINREr1l0qX%2FGA%3D%3D.7MbAeHVjvh5BNL%2Be5%2FNjIpPihNYUHTBmY9lU44cfeUD0%2FWKkahhtmQuLDn194ZJn"
+               rel="nofollow" target="_blank">underscore</a>：JavaScript 的实用工具。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=vd%2BUlVurcXyUySDZk4QOig%3D%3D.%2BxbFnN4me2%2Bxjug5l7c6pd9S89y%2FGNE5LmDg0LL%2BWUdE57jKbrnW0Am5cOxHtlls"
+               rel="nofollow" target="_blank">lodash</a>：提供一致性、可定制、高性能和额外功能的实用库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=bnGK3%2BCojFrfq0R2bWAIyg%3D%3D.kekGV%2BHXmyn2sJMlPly1d5iDgcqCH%2B1gMQQx%2F%2B%2F9h4CGL7%2BE6eXsVOE9XFJCkTp5"
+               rel="nofollow" target="_blank">Sugar</a>：一个扩展了原生对象功能的 JavaScript 库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=Sfi7g43JE8lGeiGqJ2eisw%3D%3D.oCYEIgeXEuIEfTQAGG%2FAGXovCsNFsDMWDR6TeEth%2B0A%3D"
+               rel="nofollow" target="_blank">lazy.js</a>：类似 <code>Underscore</code>，但性能更优越
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=zmCOwkD0%2Bee6l30XqTG8NQ%3D%3D.DZjXi1AcV%2Flc7DqLq34Vs8tyPShDtRld73qyxEVMoFuKwA3KVAuJKp6Nw9UcnDE7"
+               rel="nofollow" target="_blank">ramda</a>：一个针对 JavaScript 程序员的实用函数库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=Yn8uQrlxPv4NhN%2FzKzU%2FVw%3D%3D.sWgSNfjo5zF8vTusFuXUy1R74OWAQjsGSqPYl69BhLQ%3D"
+               rel="nofollow" target="_blank">mout</a>：模块化的 JavaScript 工具库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=DVhj4b2b%2BPp1CKT7vLdZ%2FQ%3D%3D.EhuefrW48ZHnpohTd3M8egkWBTZ7hc5cINRNF9Vs2e8%3D"
+               rel="nofollow" target="_blank">mesh</a>：流数据同步工具。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=EjBHqi3SIDv5kJjx%2Fi4gSQ%3D%3D.j6FXCRlUvLuRe67cs%2FA1AL3WxwjaleedoxDZ%2B1M6%2FWKk3EE060IuaolWB8AO2tbB"
+               rel="nofollow" target="_blank">preludejs</a>：JavaScript 硬核函数式编程。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=73MyqQXZ0TsfUTLQNKEJvg%3D%3D.xRPHcCKo8j4nhiQ9lluJxRZ6AcI37EkjXgbd2WCWmPsP%2FCwK9%2F8oa3EkigQK8%2BmQ"
+               rel="nofollow" target="_blank">rambda</a>：<em>Ramda</em> 快速小巧的替代品。
+        </li>
+    </ul>
+    <h2 id="item-2-5">响应式编程</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=ElaW7MyDabg%2BSm9DMe3%2FQw%3D%3D.kuknR%2FanvApAJ3xPLC6ouUMy6g43rJ%2Fkdh6mPYGqVMAD1cNWrqm%2F26RElwY%2BD2GN"
+               rel="nofollow" target="_blank">RxJs</a>：对 JavaScript 进行响应式扩展。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=IGdlHQoDgal6hdGRS0EFeQ%3D%3D.nVKawJ6z7a%2FmK9n5W%2FWkXKaYFcdChhtTV61xy90CiysVq8kK2fPnyrL%2BmYB4aDIO"
+               rel="nofollow" target="_blank">Bacon</a>：JavaScript 的 FPR（函数式响应式编程）库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=8XXGhZj389sl7E4UwwaLMQ%3D%3D.VSN4RJg7ZMcLEZaUZmkwncJL%2BAJRvAwMR4y0zMB0XvY%3D"
+               rel="nofollow" target="_blank">Kefir</a>：受 Bacon.js 和 RxJS 启发的 FRP 库，专注于高性能和低内存消耗。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=DGP9scDoNV2wn6%2FsHJONgA%3D%3D.Iy5vhu8mJ84vDGYkI4Te9M5NMukYFIfZ8uoaa3HcO1A%3D"
+               rel="nofollow" target="_blank">Highland</a>：对 JavaScript 实用工具的重新思考，Highland 能轻易地管理同步和异步信息，而且仅使用标准
+            JavaScript 和类 Node 流。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=ekbL1RQikugcHH%2Fq9MfVcA%3D%3D.MdrpnfE4L33iUsI5h340TFRsXTTSqiMTxcONGdNP8bc%3D"
+               rel="nofollow" target="_blank">Most.js</a>：高性能 FRP 库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=PwpvZqmlhLscoDGD%2BO7gaA%3D%3D.%2BKYDkqvweNRYjxUDZ%2BlPxItqiet6SDYK5sScPg4dP4k%3D"
+               rel="nofollow" target="_blank">Cycle.js</a>：一款用于可预测代码的函数式和响应式 JavaScript 框架。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=KBZibIca6badCJEopDgRLg%3D%3D.bvSSLKE1KzzmWwRAr1q48NK9Jb%2B4lD3ut4joy0nmHQ2EgXSDcJRnMdXW%2FRsjXXiC"
+               rel="nofollow" target="_blank">concent</a>：绝对是 ❤️ 最简单却 ⚡️ 最强大的 react 状态管理开发框架，可预测、渐进式、高性能。
+        </li>
+    </ul>
+    <h2 id="item-2-6">数据结构</h2>
+    <p><em>数据结构库用于构建一个更复杂的应用。</em></p>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=PxcHcWx1jr5sYYXXFf8xlA%3D%3D.aclQ1h28y7Sk4%2B1u1h63mWcLpt8Z5uRRsUhBW4vN%2Bz2ddf8MNG%2FFOw7MQuFccB4i"
+               rel="nofollow" target="_blank">immutable-js</a>：不可变的数据集合，包括 Sequence、Range、Repeat、Map、OrderedMap、Set 和
+            sparse Vector。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=3BRqEJ5qKFzVad4YZST0vQ%3D%3D.Z5DmU6UoLMfiGJh8Jyp%2FVJtCN5ggJG1X891AEeJ2hs%2FSQ%2FaeHnzAjJdWME55gE8n"
+               rel="nofollow" target="_blank">mori</a>：使用 ClojureScript 持久化数据结构和支持原生 JavaScript API 的库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=gOv824XsNOdQWV8hNaiyEQ%3D%3D.0nKrOBK14W81oFHS72A6efJuBTNBUjjZrARMz8ZFK%2BT7wkn%2FKh3r52iNb0ogW1UN"
+               rel="nofollow" target="_blank">buckets</a>：完整的、经过充分测试和文档完备的数据结构的 JavaScript 库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=0uzn1ISzKrWPrI6hyZuBXg%3D%3D.DPUk2alINrsxrAYfXVn9da1JG1PNODKApePJ9%2B%2BH3oWqvSNvSBBlgU3MApJk9KTw"
+               rel="nofollow" target="_blank">hashmap</a>：简单的哈希映射实现，支持任何类型的键值。
+        </li>
+    </ul>
+    <h2 id="item-2-7">日期</h2>
+    <p><em>日期库。</em></p>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=V8i6Fcbt6jg8x%2Fe7Fwdkxw%3D%3D.DKfcgiN0iGHqaYwzTS2G2LeVgu6ycpQ6Dd0hggvxdlT5i3tfBb6lVEpH3sOiuhWY"
+               rel="nofollow" target="_blank">moment</a>：解析、验证、操作和显示日期。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=yp22oKxXr54pYBrXdSGadg%3D%3D.TydKXh8slsTKAyJoIosKxLS%2F0fad2dFVBnR%2FH5TQnKxyeq3gbAnTzh5vHP%2F5C5Jb"
+               rel="nofollow" target="_blank">moment-timezone</a>：基于 moment.js 的时区库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=TLl8Rvpm2LjIT4br5C1cEQ%3D%3D.cXZdvs2l%2FG72TD38Xu45x9SDv6E%2BbPktzyauAv3PFo2Bk7J%2BCgR6q3aUH12cY3Vb"
+               rel="nofollow" target="_blank">jquery-timeago</a>：一款支持自动更新模糊时间戳的 jQuery 插件（如："4 分钟之前"）。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=rotSISKU5jiYzZZ5zq7ihA%3D%3D.lQVPEkRzUDgFyXLlnOtRgVJj49mF%2F2ZIrOuUPZIWfMxmBKzTogvIrh7YcZ6DAsXx"
+               rel="nofollow" target="_blank">timezone-js</a>：让 JavaScript Date 对象拥有时区功能。使用 Olson zoneinfo 文件记录时区数据。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=3Z7pQ61GAedONNmpUE0MHg%3D%3D.lQJcCcQIDnYM3PJJwBg1ndQ%2FLW35QE%2Foh2%2FBUIqTdhYG5hvAOss8NtxWHXq77Hqw"
+               rel="nofollow" target="_blank">date</a>：对人类友好的 Date()。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=q%2FLlGlHv2TIhL2UIKeO%2FcA%3D%3D.9zMWBOKTawFAUWWBG4%2BHnKi%2FbHk7hLgn5IjJj4oqFdQ%3D"
+               rel="nofollow" target="_blank">ms.js</a>：小巧的毫秒转换工具。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=ribPvrdNbrtNrBCzWWINYQ%3D%3D.PKG6vvCvBXof2YsKZMFcChZQ4MyIx6rJxyYHR70mIHbZ1T9zGF7kbEgCTb%2BwOisv"
+               rel="nofollow" target="_blank">countdown.js</a>：超小倒计时。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=LPbkH3yjN%2F2RJ7P%2FzjVWpw%3D%3D.%2Fx%2FK3hFhVhS6vslUhKlkhiu6VgL7sSkQnpv68u%2BC0vQ%3D"
+               rel="nofollow" target="_blank">timeago.js</a>：一个非常轻量级（~1.7 Kb）的用于将时间转化成 <code>xxx时间前</code> 格式的库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=DWCP7cgJJAp8Gz%2BwDFc3jg%3D%3D.yzbsTEaIcI%2FZpPpWrBKZLu7OWaXudlDpjTNgQ5tQzSGDZq2m%2BhULjc0GR0NxEiv%2F"
+               rel="nofollow" target="_blank">fecha</a>：轻量级日期格式化和解析库（约 2kb）。可以用来替换 moment.js 格式化和解析日期功能（moment.js
+            体积比较大——译者注）。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=YoGMEdpJ7hAQLtHHgeZK%2FA%3D%3D.0rEBFRoX6ov0uzWh3564aZJrLw4%2BRKXcC5CNj8yJ8xDNMR4Co%2FPOp%2F7pjYmssOty"
+               rel="nofollow" target="_blank">date-fns</a>：现代 JavaScript 日期功能库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=swLxe7%2Fy3dmJS%2FITt8gYNQ%3D%3D.FLgXhAKhRVtANnVcANcm0fblqfLSNEOp7ohqEZl0fdcWz%2By0nQ1Xi2oTh4XtbibW"
+               rel="nofollow" target="_blank">map-countdown</a>：构建在 Google 地图上的浏览器倒计时。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=UECEPylQzcuM5bcjH0PG9A%3D%3D.oZahe%2FG13lWFG7X46WIy%2BG9OJr68yXxVKCr62iEjtlg%3D"
+               rel="nofollow" target="_blank">dayjs</a>：Day.js 是一款拥有和 Moment.js 一样的现代化接口的日期库，但它仅仅有 2kb 大小，可以用来替换
+            Moment.js。
+        </li>
+    </ul>
+    <h2 id="item-2-8">字符串</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=rG2FnpBtRCjA3JnEud31pQ%3D%3D.XTYZqGcjNrZpYK1mD662djfffDFyyoI9SDIIfFJavE3dpONt6jKt%2Btv8lesesrI%2B"
+               rel="nofollow" target="_blank">voca</a>：一款超级好用的 JavaScript 字符串库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=aB0VbJepaq8ceZLYsD9tBQ%3D%3D.TAv2Z%2BpOdLUAz4rRNiVVHqoKGTxcKar3itvK3ha%2BgrQHk8fLnAKsmU7rU4DXnlf2"
+               rel="nofollow" target="_blank">selecting</a>：一个允许你获取用户选定文本的库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=UWoUEFbpBWARyWsTvwInxA%3D%3D.t2nzro4aQ0%2B65ErrzmGQ%2FpUTQv1WQyWmPQQwNnLa2gQvE0dvI6Gt2tKgBEsUtRzb"
+               rel="nofollow" target="_blank">underscore.string</a>：Underscore.js 的字符串操作扩展。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=frNdD2W0agMLey1FPhk6Bg%3D%3D.nPeHw9mhkpoxapF%2FGMT2bKOybjDGtU%2FyCxe3RjfgapKNBYMuJvWvRfMsFcFNRaeX"
+               rel="nofollow" target="_blank">string.js</a>：额外的 JavaScript 字符串方法。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=%2FYaMqLlbZt8HUzhjAEi9dQ%3D%3D.QM7yPu23dbjCtNWyGmFOxXFYzo%2F%2FJ7mbGsCsGlqDmLCk4j2M1LoIYz1sOZkhEZqL"
+               rel="nofollow" target="_blank">he</a>：健壮的 HTML 实体编码/解码器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=z5iFzac%2FrpgwLsZFUiRz0A%3D%3D.ZGdF9O9h1IUX9cj3phFx3QAozRIYoMANhJ%2FfF6inGZKcH9dPWX5SocTZFWC6HmEA"
+               rel="nofollow" target="_blank">multiline</a>：多行字符串。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=5OlD8FfpA4jQmhQS3I%2FR%2Fw%3D%3D.KNRaMbh9S4mJSkPzBp%2FKTzzyzuRFB8uzTTI6Qu9vo0%2BJxeRPcTGuMv0FIUzIaK9E"
+               rel="nofollow" target="_blank">query-string</a>：解析和字符串化 URL 查询字符串。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=72YiiFSvkg2oxH5Aizg5bQ%3D%3D.MAYRVJDtLaZIriu0GwRQQK1FHUgqZcVM32tB1V6H5rJUvAQGLZX5cqZeCVyWy4V3"
+               rel="nofollow" target="_blank">URI.js</a>：URL 操作库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=qQTp4ZElxfoRSeSsJp2wfA%3D%3D.KqvOXYNcyZDJkb5sPXAxDD25AGZqgMX%2FjrNcLxXim%2Fg%3D"
+               rel="nofollow" target="_blank">jsurl</a>：轻量的 URL 操作库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=fBlS1H%2FQCB%2FC0%2FY%2B1YjdwQ%3D%3D.dakJ5lqQChac3LYg5TE59AxLUTnV6%2BpD5yr439rHYqwssSDvTwsmbIz8KpanZZxv"
+               rel="nofollow" target="_blank">sprintf.js</a>：实现字符串格式化。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=X5SnHQozZnJ5u1NlPRe4mg%3D%3D.ZC9jRhTrBfSKmwptC3TBfv34hl900k7KXtx1h7KDVp48x1lTZ3aZvDo0akAGJiYC"
+               rel="nofollow" target="_blank">url-pattern</a>：比正则表达式匹配 url 或其它字符串更简单，字符串和数据可相互转化。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=L%2F%2BIcPqlDqTk9RKQZQxHLQ%3D%3D.XeQTeOjoG4rJBgxpjty3PLOZRl8befsowZOFKqm%2Fe1xBdZ8mBjjQYlI6j4PkdgbW"
+               rel="nofollow" target="_blank">plexis</a>：低保真、强大、社区驱动的字符串操作库。
+        </li>
+    </ul>
+    <h2 id="item-2-9">数字</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=iWagX%2FaTjoZ5hujMvp6pGg%3D%3D.PTpzbtrmzouzkHuIdU2ukJ%2FZjPBN47%2FKBdOLsHfAaR1ihyYsu1G7S1dGnZgbuh%2BG"
+               rel="nofollow" target="_blank">Numeral-js</a>：对数字进行格式化和操作的库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=Ad77xs3Ey93Hk0xb3zKGNg%3D%3D.NZey%2BpAm5k5SP53%2B%2BP9mCwLXqShwDb6J%2FTfMDsedhpgcq6P2ep8p%2B7Ho8JwevSRd"
+               rel="nofollow" target="_blank">chance.js</a>：JavaScript 随机生成器，可以生成数字、字符串等。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=i5Jy4ZyXAtNcpBsuMbO7SA%3D%3D.kvFufzXzqRIKvxHrKs05faxI3XHh6cn8JK2Eyr0nWsxQx4wLEt58GGBwzqQEqNpa"
+               rel="nofollow" target="_blank">odometer</a>：流畅的数字过渡效果。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=HE%2FCrz5m1vxgVX2ZIZakmw%3D%3D.5iFVBJliHArQklfReuXOurSaAHIiuwDsvbYTXNsDHw6HDQZcKLdk878HaTZqHIZq"
+               rel="nofollow" target="_blank">accounting.js</a>：对数字、金钱、货币进行格式化的轻量库，完全本地化和无依赖。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=XyLGLPcualZgpHA0whwqaA%3D%3D.QCxxFhgly6eCrUSuxlYKMPzkLNDSkgxKey2ai31%2B0KjvM264yO2kDohEy%2BMZ3%2BD3"
+               rel="nofollow" target="_blank">money.js</a>：一个小巧（1kb）的货币转换库，适用于 web 和 nodeJS。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=%2F8kaSwqi1TgFkDVfMa2bVA%3D%3D.2U63oWZHVGoh0iK9b86PZDndDTg3seHYbBDABUqkdRr9jzVlwRbhrN2B8xAITvpa"
+               rel="nofollow" target="_blank">Fraction.js</a>：一个有理数库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=qZBP9hLkYbbOu9ikUwQA%2FQ%3D%3D.oLwhVg4hbLfl46o4R%2Fhqn66O5eQG317LBXJQ%2BfHm8Ce7gcQi2Flko80XWSDGpEw6"
+               rel="nofollow" target="_blank">Complex.js</a>：一个复数库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=0sk8zglDkMteiJaJd%2Fophw%3D%3D.Hozoww0SyzTc%2F%2FvC7dgWecwEji1ko0te1E5f7VenuehIw2%2B6%2BsPQKMBmfaqhl27I"
+               rel="nofollow" target="_blank">Polynomial.js</a>：一个多项式库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=FTgqohrSVmEQOhicKDt6Ew%3D%3D.HUTq2QiEEvetr%2BIcF7t9fNPK6JdM8CBWa4b%2BRw%2BKEjn2jCcpVTdogH%2Bvzpas2Jsy"
+               rel="nofollow" target="_blank">Quaternion.js</a>：一款适用于 JavaScript 的四元数操作库。
+        </li>
+    </ul>
+    <h2 id="item-2-10">存储</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=EoWexYJODF4nAL811zNJUA%3D%3D.grleXje4HP%2BBAoMbYGTC1HCknBBdvX%2FM5n%2FI3rXPcnmV4Kql0vKdrlhZ54%2Ffy5b0"
+               rel="nofollow" target="_blank">store.js</a>：为所有浏览器封装了 LocalStorage，而没有使用 cookies 和 flash。隐秘地使用
+            localStorage、globalStorage 和用户数据。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=HFIJ3WNEU8Lgb6WhHEvhAA%3D%3D.tX0o2iP%2FUmSFjTZtFvh25fqS564qntDCsyg%2FPGVvydZUEAWTrDgpgB2DMld8JUEI"
+               rel="nofollow" target="_blank">localForage</a>：改善后的离线存储。其封装了 IndexedDB、WebSQL 和 localStorage，拥有操作简单和强大的
+            API。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=jmjK3PApbwqDvG3gat%2By3w%3D%3D.K3yWIvpqraPHJWNIdKul2RDksjJkck%2Bw9lWyG1qR5tXzWS%2Bov9rmztxodqwkmroY"
+               rel="nofollow" target="_blank">jStorage</a>：jStorage 是一个简单的键值对数据库，用于在浏览器端存储数据。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=bk1osYjLNixUPv%2BIioiq%2Fg%3D%3D.bUsg%2Bqr5wog9ZqhdBDRBMPT4VX7%2BzmpNoG11PmM8QB3sOONYjxXtNoqXfaBWi86Y"
+               rel="nofollow" target="_blank">cross-storage</a>：获得权限后，能跨域名本地存储。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=oQLUL5iSqfSEvW4bxBYevg%3D%3D.xHyUXkS0EwDE1dslKQzAkuUJuKL5KvRsD0yqYL3lkVmHVGzHRQqLfISLCt51AY5%2F"
+               rel="nofollow" target="_blank">basket.js</a>：用 localStorage 加载和缓存脚本的资源加载器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=BaA43MThlYHXR6Ytf51gcA%3D%3D.1OTDzsxwBYDj%2BLSoS8qoJ6OLpTmCjc%2F6Np8NiL7TFh9QlZrKV0XpUl3x8LdDqjmG"
+               rel="nofollow" target="_blank">bag.js</a>：可以缓存脚本和加载资源，与 basket.js 相似，但增加了键值对接口和对 localStorage / websql /
+            indexedDB 的支持。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=FB%2FE66xrTZd67LTWuEZARg%3D%3D.IUlM9uwpzjPoF7pXaQuqa0rlJZb3aRHM%2BVAlHbop8igMNanNwGOKMAXFffzbCpIk"
+               rel="nofollow" target="_blank">basil.js</a>：智能的 JavaScript 数据持久层库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=tBI3y1J7Ly%2FgAKl63RSMmg%3D%3D.OwHRj%2F4rDbzwP8dHOBT9ZCqGHptJZZv95qOxK6VLINYVDsNy1nlvY9oBcpkChXOd"
+               rel="nofollow" target="_blank">jquery-cookie</a>：轻量简单的、用于读取、编辑和删除 cookie 的 jQuery 插件。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=6r8EM94xU62eyHz0Ve2q%2BA%3D%3D.%2B4iNA46AdYSjwbDh%2BfT3%2Bp0w%2Bxpk1rsRVV6OSvRjUvTwEBy8Vff0xWrawNMIySS3"
+               rel="nofollow" target="_blank">js-cookie</a>：一款简单、轻量的 cookies 读写删 jQuery 插件。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=5RDl0QzpUcziwlWZYj%2Fg7A%3D%3D.FqO0RRPJSHzaVq6SrltkV%2BIuwsZhtcTR1bqkl6q8wO2c6XnOc%2BsMfVs2o3pt6pZq"
+               rel="nofollow" target="_blank">Cookies</a>：一个客户端 Cookie 操作库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=6tF09tCPz29tr%2FGeyVpoEg%3D%3D.zo1EZU%2B3wcFdbV0VOU9sKEqsciKfiQpgXKADL3Hs9VG2hJocNGc4CIJ2dmsZobCJ"
+               rel="nofollow" target="_blank">DB.js</a>：基于 Promise 的、封装了 IndexedDB 的库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=3TIiGlIv4icHnPyUpHXt3w%3D%3D.29EpK8mbCoOl3y%2B%2FX%2BtMS%2FUTUyWjXcF0QRTCgjoegC5LqSPnf84XG6LsZjnAIbB1"
+               rel="nofollow" target="_blank">lawnchair.js</a>：简单的客户端 JSON 存储。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=OQsGOIAzND6gV80vbQqwlQ%3D%3D.iAbV7MzHFW%2BNAePiXUASNC%2FCtqGULfDbfrhCcRmeqh1b2G5Ig1LhFQrkvz%2BggmuI"
+               rel="nofollow" target="_blank">sql.js</a>：基于 Emscripten 将 SQLite 编译成 JavaScript。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=PiU4Y%2BNAiexGic8azZP0aA%3D%3D.5WnwDoBIx1KU%2Fxh3p4rF%2FxzoVCE6bp%2BzRwTL%2BQyIiCMTNIWsR8HR4GHIC%2BFj%2F%2Bwx"
+               rel="nofollow" target="_blank">crumbsjs</a>：一款轻量级原生 ES6 cookies 和本地存储 JavaScript 库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=RSUxu97rqZ6vl2V%2FAdXjTg%3D%3D.4Zr8J6qXAqL%2FK%2FYoLIO13wJOfD7%2Fuz6IZDlLBWCK1FztGT6pZEZmk0jgcXFJtrin"
+               rel="nofollow" target="_blank">awesome-web-storage</a>：你必须知道的所有客户端存储知识。
+        </li>
+    </ul>
+    <h2 id="item-2-11">颜色</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=GwWG6tDWDXVTbv3MP1Fybg%3D%3D.RoPdAB6kAA4uCli0A%2B1lwo5Y9Jky3IcHibOmyX2whfWHqTrR8WPZknvtp%2FwLPeXy"
+               rel="nofollow" target="_blank">randomColor</a>：JavaScript 颜色生成器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=JYZHAvyEqlxy%2FHJw1HH7BA%3D%3D.tukYsl1oyIoqZDrUiMGJfwxUmhmXpy1xvyAHudE9NPh4As2OHH99J8apftIuc7r9"
+               rel="nofollow" target="_blank">chroma.js</a>：拥有各种各样颜色操作的 JavaScript 库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=dFwfZOOy7Ipb0i0yTcBb1Q%3D%3D.71FvTH1yK%2B%2BN5ORZv4v22ONMYUX2Y%2FhL6WhZFMLOLnM%3D"
+               rel="nofollow" target="_blank">color</a>：JavaScript 颜色转换和操作库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=OFnqVZnJnRdOoNxn1KFifw%3D%3D.BiZWzep1OFQuerm%2BqR1qnBCsZo%2BPpYvIY7te5MaiBXc%3D"
+               rel="nofollow" target="_blank">colors</a>：更智能的默认 web 颜色。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=9DXnu8RLuav4gSNEKMGQrw%3D%3D.WwqyW5Ic6n4H8BAuMLJkqYIxv6wSw7r93Z1%2Bd%2F031xkqC4m5gJuyom7CpnW8sMbW"
+               rel="nofollow" target="_blank">PleaseJS</a>：随机创建出赏心悦目的颜色和配色方案的 JavaScript 库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=aq03nX5zIKh94n0VVfpxiA%3D%3D.OFdjeBqmoTcmrg7q1FM3r35n9sGij8B2qcnGGL816KFneGMtspJ0PG2RUkCNx40c"
+               rel="nofollow" target="_blank">TinyColor</a>：快速、轻巧的颜色操作和转换库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=m3gpHoJd%2B6%2Fp82qHUSOFcg%3D%3D.ff1YQ0MoZs%2BBzmFHarHvgyPqDDzce3ADqOXVXNFB7dvYd5AkEO82TiRFqXX1Tbay"
+               rel="nofollow" target="_blank">Vibrant.js</a>：从图像提取主要颜色。
+        </li>
+    </ul>
+    <h2 id="item-2-12">国际化和本地化</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=pYBsRU5GMgq9OUjggnDFkA%3D%3D.r0H9GDGi%2Bx0wi1zhr8UI%2BUYGrSsQve%2FdzaieWzN8cypx5Msd7UR%2BEt49qF7GKuIL"
+               rel="nofollow" target="_blank">i18next</a>：用 JavaScript 实现国际化（i18n）简单的方法。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=tktxDQS7ocNzq5mtBBEeNw%3D%3D.yWhBfGOOcv%2Fn1egrLK67RAMRxbIj8zTuNn7EyeZnR%2BD9KU5yxIIt7jQMgm0uXUx8"
+               rel="nofollow" target="_blank">polyglot</a>：小巧的国际化助手库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=C7tsemot9r1HxmiT6g5jcQ%3D%3D.peyaqcTbJzRrP8a2h9e4O4tTtVfHQd9SYoY0OvsZqsfaOY3sMNuRUxBEdBCbOa%2Fr"
+               rel="nofollow" target="_blank">babelfish</a>：提供友好易懂 API 的 i18n 库，并且内置多种支持。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=dMDOOcT7ygUpHbuF3uF0BA%3D%3D.GTvLEMZ4%2FO0Vta9q1MyKHcNy6Jnbt4vnYMCsXC%2BfW20rOaEd625%2BBAnwkz8rIgUF"
+               rel="nofollow" target="_blank">ttag</a>：基于 ES6 标签模板和优秀的旧 GNU gettext ，新潮的 JavaScript 国际化、本地化库。
+        </li>
+    </ul>
+    <h2 id="item-2-13">控制流</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=m83pyEGfJBuu51FVVJPe8Q%3D%3D.pvITADm43k3byk7%2BcR1xwfVscRdb%2BzCqD2tKptxdN04%3D"
+               rel="nofollow" target="_blank">async</a>：适用于 node.js 和浏览器的异步工具库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=TZwxAj1rWZPXtTnV1FCXHg%3D%3D.W0jiui4tSDHg5OcO%2BjPU6h8Ukn6zjjSGmTJCGzLzZHM%3D"
+               rel="nofollow" target="_blank">q</a>：实现异步 promise 的 JavaScript 工具。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=Bap7MgpK9HiyFa7erXSNdQ%3D%3D.JHVI1CtIiC3B8%2BPEovLR%2FdNhQS98EF5V1re%2FGkt8iGeNgcNTth4OBRjJ7Kreb3Tv"
+               rel="nofollow" target="_blank">step</a>：一款可以使逻辑执行更简单的异步控制流库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=ileFCGYEZa7KKoEa3%2FESsQ%3D%3D.dXnpsN7m8dCSciERYr58z9a2voSlnj%2BXjNTOP38w757sSFqFkeGObrpQzqXVZ2AF"
+               rel="nofollow" target="_blank">contra</a>：函数式风格实现的异步流控制。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=TAC7JlfFCZ5Hh7VLyRmiHw%3D%3D.ikXWtAHxLkAuXbl%2Bzz0myBqKZrNuhfA%2FI7defEO7yCxfdhMzZcHal6sOY5SQ6o4D"
+               rel="nofollow" target="_blank">Bluebird</a>：功能齐全的 promoise 库，专注于功能革新和性能提升。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=iR4wHiPoWAsl8AImEpAhDw%3D%3D.WVbOX6QtjAmNjteEMWfHCkkDJqgBqG3mXu8OdIeHf2Q%3D"
+               rel="nofollow" target="_blank">when</a>：快速可靠的、Promises/A+ 规范的 when() 实现，而且拥有其它异步操作的优秀特性。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=uijvM%2FhqXH1plVfXg47z1Q%3D%3D.bHSbCpmwv0nn05B08EVnpSOm8p45jUyoFwW5ZfaSntl3kB2%2BBPqMneD3k0nsbdLp"
+               rel="nofollow" target="_blank">ObjectEventTarget</a>：为普通对象添加事件监听原型（就如浏览器 DOMElement 的 EventTarget 一样）。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=SYHX%2FAg7xUZo40eb6mMbxQ%3D%3D.a4VmOiHGH2xAYORm%2B%2BKgNGHNThX8nPaudruT9hd5jD1MNt5rSWxk2TPOwO7GcKSk"
+               rel="nofollow" target="_blank">sporadic</a>：位于 promise 顶部的组合并发抽象（就像流、协程和类似 Go channels 一样），支持 Node.js
+            和浏览器引擎。
+        </li>
+    </ul>
+    <h2 id="item-2-14">路由</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=mfn5wgYad7bRjd1iRlMg2Q%3D%3D.yi7cIKNaR90riMlAFgFmQsGEXBC2UC1ebC0155YNrRTKe%2Biqveu64uFBd9U6mx0q"
+               rel="nofollow" target="_blank">director</a>：一个小巧的、与 URL 同构的路由。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=zLqFxN%2FRkhl%2Fosz0xTZ9gw%3D%3D.Jt7X08nEdfgNmBtzH7G82%2FRVK4gGly9PTuG%2B94ec35AKxSUPwKrl2gH4vo96QP4h"
+               rel="nofollow" target="_blank">page.js</a>：受 Express router 启发的小型客户端路由器（约为1200字节）。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=1I3cATeIlRYLRcVd%2FXvMkA%3D%3D.pAmEgSZv1vjxNsjW9GpoQ1Mxy%2FrLLVvRMN070qAX7O4nvKJdwgqY7A8jA%2FOO568d"
+               rel="nofollow" target="_blank">pathjs</a>：简单、轻量的 web 路由。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=1ViKnN34g9ofzGAwCREU9Q%3D%3D.I0sHovz%2BKNxOHuvX%2BEh18mmv3AufjDj43Su3Kz0eEtwvlvw2TsZTZquHFcAtfcdI"
+               rel="nofollow" target="_blank">crossroads</a>：JavaScript 路由。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=rsYxY1YvN4FNY96AZiTxTw%3D%3D.3nHNYAUpFdImQIxUVPNuYPSJs3gsKZnadXYDIdlZQR%2FsC4lpYTpGNfqktlyPrxzb"
+               rel="nofollow" target="_blank">davis.js</a>：基于 pushState 可降级 RESTful 风格的 JavaScript 路由。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=TuOF3yDURe4yWQabRg3hJg%3D%3D.Agq8gQ2Q4k5vanPCny4dfUZF95vFXvwXhOOMroZFkhQXjp908RCsMJcyFM2LFpII"
+               rel="nofollow" target="_blank">navaid</a>：一款浏览器端的导航辅助系统（也可以成为路由），体积才 850 字节！
+        </li>
+    </ul>
+    <h2 id="item-2-15">安全性</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=szb8sgZnJskHmi4zMesEaQ%3D%3D.ogG1%2BtyW%2FVumk5Gebz8hMxdNIXIi9ZKJu%2FzzB4JmTDHD9Qe%2BsqOKUbrINM5xWcjk"
+               rel="nofollow" target="_blank">DOMPurify</a>：针对 HTML、MathML 和 SVG 的仅支持 DOM 的超快速、高容错的 XSS 过滤器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=wL5wepa5k9JZo0ij2EIRVg%3D%3D.pio0XREQvB2N2PusE7oK1nVG1AL4rTpVBZrbQcq%2FS%2BdATrttwMtGOk0zR6LMkp7A"
+               rel="nofollow" target="_blank">js-xss</a>：通过白名单配置，即可过滤不信任的 HTML（防止 XSS 攻击）。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=jFxte3d8Gl8B%2BN9gtFIGXA%3D%3D.52tcEvBPumZfegZWen7BXWf8xpji0xvRjVtpl9mR3Ex9MAdWQivN5dBgaRNVtzsz"
+               rel="nofollow" target="_blank">xss-filters</a>：Yahoo 出品的安全 XSS 过滤器。
+        </li>
+    </ul>
+    <h2 id="item-2-16">日志</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=HVvF0pwwF7HlQL1i9TzFKQ%3D%3D.5v0b%2B4z3Yz3CmrE3ouatliOyb7RRGL8Y4xFKDiwIFs8MAOzToWQRN3NmfpLu1%2Fph"
+               rel="nofollow" target="_blank">log</a>：带样式的 Console.log。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=qdCBfhkWkxShd2SGxzqNhg%3D%3D.1TpBmdkEqNNwHLbRwNta4Bxd2U3yHyzV0x02614KnmK2wAFTSXtCIbZb7QqqZWn7"
+               rel="nofollow" target="_blank">Conzole</a>：对 JavaScript 原生 console 对象方法和功能进行封装的 debug 面板，并将面板显示在页面内。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=vPzv8%2BhaH47YuK0nn%2FAtJw%3D%3D.ICaMH21vVfN1wMmBRS6sbRFXgxQYdd%2F7ZizmNy0P%2BYyY3vTY%2FVBftve3m0Xhak1L"
+               rel="nofollow" target="_blank">console.log-wrapper</a>：将日志清晰地记录到 console，兼容所有浏览器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=58OKPfEtRrdQ625ABISOYA%3D%3D.%2BhJcL1GIBG%2FwPxo2JQKEd8kQn0h1d59cg%2BS81W1WlnTGDHuOfzfpuerm14B7X36s"
+               rel="nofollow" target="_blank">loglevel</a>：最轻量的 JavaScript 日志记录工具库，向封装后的 console.log 方法增加可靠的日志等级。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=aI9E6nkwpSi9PEDEsd4NhA%3D%3D.Pf%2BfH%2B2PVfH5Oj%2B7hFHnBtRyI%2FhN81ZUQ%2FfYjPQ2e5g%3D"
+               rel="nofollow" target="_blank">minilog</a>：轻量的、流式 API 显示的、可用于客户端和服务器端的日志记录库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=wpC3N8ZtOlmQ6Kxp8XJYCA%3D%3D.w0zpI505j6b6QE2lZZ%2BMHkTRIAOb06mKYkVgVORzyqwNlUpi9knBzgPizNHtFQ3P"
+               rel="nofollow" target="_blank">storyboard</a>：通用日志库 + Chrome 扩展。提供一个单一入口查看包含客户端和服务端的任务触发日志。
+        </li>
+    </ul>
+    <h2 id="item-2-17">正则表达式</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=r1pwKsIN3qTEZQWJbRhDwQ%3D%3D.y10qB6euSbJ8fRZwhUoQNKzyH3qAMAiqYp0k%2FK2i4SsFh8uHVmeE3vwrDlUSvr%2BJ"
+               rel="nofollow" target="_blank">RegEx101</a>：在线的 JavaScript 正则表达式测试器和调试器。同时也支持 Python、PHP 和 PCRE。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=xH58n%2FlYAQ%2BLbqODfa%2BHYw%3D%3D.kAgQn7nfC2uWvi3EiG4WDle9NLzX8uPem%2F9a4mKbjtk%3D"
+               rel="nofollow" target="_blank">RegExr</a>：用于创建、测试和学习正则表达式的 HTML/JS 工具。
+        </li>
+    </ul>
+    <h2 id="item-2-18">语音命令</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=cUEzXZYvzMAz9l%2B%2BDP4yyg%3D%3D.ia3KdkPqIttQ3zwZfsr43qNwsMs2AvWHjSEZonMIG7kHsh86YbqooZ3rs5tIeGU1"
+               rel="nofollow" target="_blank">annyang</a>：向网站添加语音命令的语音识别库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=f53TzEx0mV%2FY1JcI4uRh8w%3D%3D.YPILqczdehhPoAQyForBKoJ4MizvZ%2Bkr5OsJXCjXc33pZS7E%2FyjVw%2BYaBxyCjII8"
+               rel="nofollow" target="_blank">voix.js</a>：向网站、app 或游戏添加语音命令的 JavaScript 库。
+        </li>
+    </ul>
+    <h2 id="item-2-19">API</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=msxRRy0yOF%2BZmtn3zOdN4g%3D%3D.RtxJveuUyef2VNbhx%2FVBaMwsI8F1buenMC%2Fnv77ybHU%3D"
+               rel="nofollow" target="_blank">axios</a>：基于 Promise 的 HTTP 客户端，适用于 Node.js 和 浏览器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=nSk69oXQneslMZ%2FJKPaXiw%3D%3D.Y0yiMOQYa3H1Ay1RLBDASAoLF65Ct%2FErYlyEpxDEjx9ZKxPD9cyVuftVp8jM69BC"
+               rel="nofollow" target="_blank">bottleneck</a>：强大的速度限制器，使调节流量变得更容易。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=yH2exwJw0HJczKuMu5r2mA%3D%3D.6UT%2BZeBwdoyhiIDsoWbCo7vQcP75EQoYVOpMAfQHuFo8uZyWkBMc%2Bi4CyYea3xPe"
+               rel="nofollow" target="_blank">oauth-signature-js</a>：适用于 node 和 浏览器的 OAuth 1.0a 签名生成器。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=KCifUf6Rn572p55KrHlNDg%3D%3D.wgYqYdXj7i%2B%2FNDdOMIT6U9Vybb0Lp2BsAHKSSfhkKB%2F3nc9y%2FOZJd0kDiUwhlVrF"
+               rel="nofollow" target="_blank">amygdala</a>：为 Web 应用提供 RESTful HTTP 客户端解决方案。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=FX9dVYh1sJC%2FBmmmGYF0bA%3D%3D.Y32bzpqXtJ3dtNKu5z1sJXCGXe45jujy1OXiRJs57glUT6azo4DdjuQk0uObNt%2FA"
+               rel="nofollow" target="_blank">jquery.rest</a>：一个让 RESTful API 更易用的 jQuery 插件。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=9LgcWp9EsXtFied1eDtbVg%3D%3D.HraILFyj88kv%2F0tWjO9TpgHnCcDF4EUJA9dTwiFsya8OT99p3KrjTZD%2BEa1wrvVp"
+               rel="nofollow" target="_blank">Rails Ranger</a>：为 Ruby Tails 接口设计的严格的 REST 客户端。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=tWgNEnHx5%2FXYGq3Gvjqnsg%3D%3D.ET5rQDNPd0P1URmQXhiAabR8sAC8TvN9wX38860hXvIv6dwLCUv9QXsCLbHWfJOM"
+               rel="nofollow" target="_blank">wretch</a>：一款小巧的直觉语法系 fetch 功能封装包。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=ZSg4yAK6rbaJ6xu1LtPDIQ%3D%3D.HsoWB0DE754%2Fku9RahJAcEEKNNL5WNRNZN%2FsGNrYqnoa65tJUkqctMpN8VfLb8hz"
+               rel="nofollow" target="_blank">FarFetch</a>：简单易用的现代 Fetch 接口封装，简化了文件上传。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=L1U4%2B4d1AJrkK%2BdfJMe5aQ%3D%3D.zGwqjs2Ti5L0xb%2FpXuCe4WDEk7P00ltewecYjR2F8QM5y4c7QHSvcOM7dExVMe6a"
+               rel="nofollow" target="_blank">Optic</a>：Optic 用于对 API 自动测试和文档生成。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=uNVBEyEShbQy9Ffgr0rmmA%3D%3D.RylyyCd1xQXbLvh34M2gfQrIyXBhkcbqgeBYly2okr0%3D"
+               rel="nofollow" target="_blank">SWR</a>：用于远端数据拉取的 React Hooks 库。
+        </li>
+    </ul>
+    <h2 id="item-2-20">流媒体</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=oodDGQ6Cfm8WHJ7P0Vy3xg%3D%3D.PAQ4zJXtlfIQr5GbjRp6PnWI3d3x%2BD%2BhkJiOYG3BVlnaBGXWL%2BEFb2W1kA5yjPym"
+               rel="nofollow" target="_blank">Tailor</a>：适用于前端微服务的流媒体布局服务，灵感来自 Facebook BigPipe。
+        </li>
+    </ul>
+    <h2 id="item-2-21">视觉检测</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=iCmvT6rAGc4Uyc%2F36GQJAg%3D%3D.Z5HDiHz2aLcS9N40BdqzLWJsNW8jJ4ii3cnb%2B8G2QKPwjjUO2NrHueHpJcV4JfQW"
+               rel="nofollow" target="_blank">tracking.js</a>：在 web 上实现计算视觉的一种现代方法。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=vjyriqNF69aWKEMoosi99Q%3D%3D.gyoGePsu0WgKPrqYoNi7mhqNZVCio1OzgM01O6xl2CZcXTIYlRLYkic72y0pEsab"
+               rel="nofollow" target="_blank">ocrad.js</a>：基于 Emscripten 的 JavaScript OCR 实现。
+        </li>
+    </ul>
+    <h2 id="item-2-22">机器学习</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=TE72sXGdwMRs9CsKKmkQwg%3D%3D.oxjdoSqgYWQ7sW0bbpOle8eY6G3UvH%2BKHNUFKHcKKSXHO5UzdYsmb28u9mPWulZq"
+               rel="nofollow" target="_blank">ConvNetJS</a>：JavaScript 深度学习。在浏览器环境训练卷积神经网络（或者普通神经网络）。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=hIxYf2WQN3LA7JuZhjceVg%3D%3D.MbSc2h2uhD57AQmnftJH8c%2BIivz96ysY6NFYweSx%2F%2FiymalSeI1d1JFMsCjcttyZ"
+               rel="nofollow" target="_blank">DN2A</a>：数字神经网络架构。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=tPk6bukoPe%2Bf4L26QEMmoA%3D%3D.jb6sG%2Fy9IRqF3eu37ug3tFyxXLkvFy2ENF7WA6l%2BtNcMGfG8VOuGde9w757EMCzQ"
+               rel="nofollow" target="_blank">Brain.js</a>：JavaScript 神经网络。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=LuyqZEw3FRsHWX2JAxVTPA%3D%3D.UOYgyuURfJn8ih5HWPxZGiM9LvDY4FqonNDb%2BSB6UXvi3JuwFCa4bxuJPNoJIOhP"
+               rel="nofollow" target="_blank">Mind.js</a>：一款灵活的神经网络库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=M2nK5EOjyIqREyKM4dAR%2Bw%3D%3D.JPzsmT1mgbVOgt%2BRaybHI1AZp%2BoT8q9OzjvU%2ByY9MdVnOT%2F1OTF91doAx16CD5Cc"
+               rel="nofollow" target="_blank">Synaptic.js</a>：适用于 Node.js 和浏览器的无架构神经网络库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=a6WuLoxobFE5vuogMhpmtA%3D%3D.DHQ0xNicvf%2BsR7y7HTqSGMpPFNMqayE5JR8y2I%2BtvYI%3D"
+               rel="nofollow" target="_blank">TensorFlow.js</a>：一款用于在 浏览器和 Node.js 中训练和部署 ML 模型的 JavaScript 库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=Kx%2BWpgVnGPKIJeM8rLsoFw%3D%3D.UwgdaSp%2F%2FsNdOTetEhDKhdcxUs8L836DKQWvLFTxBHI%3D"
+               rel="nofollow" target="_blank">ml5.js</a>：友好的 Web 端机器学习库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=6vX%2B2AG3Y137CER4f8AKuQ%3D%3D.zyGG%2B4BYzKEkF0bImFbbjsUetFZq%2FhETp1thLVe760PVTpNKMLjYYpR5ijF1C%2FoK"
+               rel="nofollow" target="_blank">Synapses</a>：轻量级跨平台神经网络库。
+        </li>
+    </ul>
+    <h2 id="item-2-23">浏览器检测</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=ssC0Dj6uYuG%2BGqT5gDz5nA%3D%3D.QH8Pm66LRrH4zffTqDHwZJ82DXI5nfVchYBjLX3T9VI%3D"
+               rel="nofollow" target="_blank">bowser</a>：一个浏览器检测器，特点是小巧快速且 API 丰富。
+        </li>
+    </ul>
+    <h2 id="item-2-24">基准测试</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=0I1TKA34gIRkrVk7BaTNkQ%3D%3D.9XUECsbjHBs1jGzC9Ltby5AFZ%2FIEPmjjQx%2FYerFhoLTmOA%2FsBwtVMhNfHb%2BANJkz"
+               rel="nofollow" target="_blank">benchmark.js</a>：jsPerf.com 使用的基准测试库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=17p%2F2xhqYtoXyTHwbbLtrw%3D%3D.T0xO%2BlX52W0LLiqgkVFF3IpQMPypO1%2BT14EbYFLClo3v5%2BZ8wrbDG2BkAoAc%2BCdf"
+               rel="nofollow" target="_blank">matcha</a>：一款咖啡因驱动的基准测试简单实现。
+        </li>
+    </ul>
+    <h2 id="item-2-25">动画</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=SyiFpvcdX8h%2FqKSi5pxgCg%3D%3D.5XAXRtXzeBrpKIuMsGo7PDmsXHF8ACGWIDYGBoth7Brl7qnV6RuDa6pAwRdib5cX"
+               rel="nofollow" target="_blank">velocity</a>：加速 JavaScript 动画。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=HI1%2FBh98ei%2BNUBdFIJR4Ww%3D%3D.w44eKtLVWC86zN%2Bcc%2FvSWbMe2KSDUshcc%2F8FXKCj1mLGS7aqCmGlSx2%2FMAFxELyY"
+               rel="nofollow" target="_blank">jquery.transit</a>：拥有超级流畅的 CSS3 变换和过渡效果的 jQuery 插件。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=tnim4IQJRc7ZT%2FNAYFyioQ%3D%3D.bljWU7Ym8sY9p3eIkGG%2BVBnly9Trr9%2F4IKoAXgakgkpZdhmhCmnEMPZs3H51wikz"
+               rel="nofollow" target="_blank">impess.js</a>：在 HTML 文档里，运用 CSS3 变换和过渡制作类似 Prezi 的展现效果。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=LqUrqlMejAiSsibRJKZJDw%3D%3D.qqOj56N2z4ewuAz4iFDX1UWmjRVFsmLKt7%2BWexjCVkKpmEiETminUvQCudqZSgot"
+               rel="nofollow" target="_blank">bounce.js</a>：可以立刻创建有趣的 CSS3 动画。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=CzbMl9nWvDWsBltQ%2FZGNfQ%3D%3D.bqZAyb%2FFkTIHGDcEiPzfA%2F7ebwTcgXVUwFfm2Jw6C3zBwUgoYX9GQXAB%2F%2Bur44vz"
+               rel="nofollow" target="_blank">GreenSock-JS</a>：适用于所有主流浏览器的高性能 HTML5 动画。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=5o1HVs2wSWgj4U8%2B0eCdXA%3D%3D.C5iVfibnBeeKe%2BkGnVFhQ%2Fpx0OE4z%2Bqhv%2B9mGNWpAKpbnZL1sYnMY9XYPrh1fywK"
+               rel="nofollow" target="_blank">TransitionEnd</a>：TransitionEnd 是一个运用 transitonend 事件的、跨浏览器的库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=5%2BKQEZlrF3FpIrMQCCLYsw%3D%3D.HAbII5EQgaZ%2FiP%2Bijl312nhf4qC8TGOofnIfJk4mm3VjbwgMHjTsfOyGWd07Yyj%2F"
+               rel="nofollow" target="_blank">Dynamics.js</a>：用于创建符合物理运动规律的 CSS 动画库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=nO1gs7eE9biiVKGaeqXCgg%3D%3D.B6zYH6Ec96qJW70RGasvb0E3%2BR277JbsF7iglGcXQnuv%2Feall%2BxwnW4O%2B1s8vAhs"
+               rel="nofollow" target="_blank">the-cube</a>：The Cube 是一个 CSS3 过渡效果实验。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=p7hWw2pci%2Fuw8rZKCjB%2FaQ%3D%3D.0RzwKybs%2BiyyQXrWwxPy1fRGA293nPjKVIxHQ%2BZjsaqOU6xNJUhv3Bc4c741SKIa"
+               rel="nofollow" target="_blank">Effeckt.css</a>：一款高性能过渡动画库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=oeDQLlCPGjGYNrDrGEMZ9g%3D%3D.MUDKTLqsKvaIHKgwh0%2BvJFoHL7wcD8tksI693RTM4s%2FZHcC3vnjdROayomJh0IiZ"
+               rel="nofollow" target="_blank">animate.css</a>：要多易用有多易用的跨浏览器 CSS 动画库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=oZLenC0lmiJ8Pv99spPAhQ%3D%3D.os18HcOYGlJ%2F7NEqyvfVl1ZoGWpTDqlz1E6%2B3E%2BmW7X7pkKqDK%2FJgP5FthFU%2F1rH"
+               rel="nofollow" target="_blank">textillate</a>：适用于 CSS3 文本动画的简单插件。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=nWB7KabRVyvkv4Ui8GM%2FcA%3D%3D.Bpp9ujVW8xLH0R7qP0FbRR0YTiaCl0VLuqV8tZdoshdkh6oyWvTj2g7DfdQEbnZg"
+               rel="nofollow" target="_blank">move.js</a>：基于 CSS3 的 JavaScript 动画框架。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=2Rvy2T2X09MHHzc7tO7IFw%3D%3D.AFhVUV2cr3niZ5XEnu0DC4O0%2BEknlwpPJArlweNyFFttmEb92t%2Bc05TuU%2FlV90tR"
+               rel="nofollow" target="_blank">animatable</a>：一个属性，两个值，无穷个可能性。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=DgD0W%2BzxnroMqCBEypQ3Kg%3D%3D.viXjNQzjLhyH1nKSu%2ByVT%2BHoztXZ8XcJBohdTssQwXb7Cmqt3ahxNwbG0sWlT%2BVR"
+               rel="nofollow" target="_blank">shuffle-images</a>：简单有创意地打乱图片。<a
+                href="https://link.segmentfault.com/?enc=RRGjTk5OI5SVM3jvt3AFRw%3D%3D.pEIjiFSAOwEJ8tl4ObL7ahUTO9%2FrLWb7WXBOJ%2F%2F1ntmbouDmTg091YSJhMCS6bLR5peoAUP%2BtFc6RN3wUvap3g%3D%3D"
+                rel="nofollow" target="_blank">http://www.thepetedesign.com/demos/shuffle-images_demo.html</a></li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=Hrd0CqGA0OF2xkSFhEZAuA%3D%3D.zAAV6Ag2BuVLOJj%2F9Y02OMSGGOBh%2Fmlvs%2FInonaJUkIV9SOBngNdQE8M43foo2yD"
+               rel="nofollow" target="_blank">smoothState.js</a>：免打扰式页面过渡 jQuery 库。<a
+                href="https://link.segmentfault.com/?enc=8X7lnnRLrvolKv8EGdpVlA%3D%3D.7otpg3LVi9lVrHOY41eSBgToLepOnGgL4Xibp%2FFvfeI%3D"
+                rel="nofollow" target="_blank">http://smoothstate.com/</a></li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=f6KXbh7jcOS%2Fr1Loxp6x3A%3D%3D.x1KoO%2FIt7v%2BOS9MWXPIzHU2L3sGKQKcqxBk081Ny4hE%3D"
+               rel="nofollow" target="_blank">Anime.js</a>：一款 JavaScript 动画引擎。<a
+                href="https://link.segmentfault.com/?enc=YWLcQYfwRvfkMrRJncPu9g%3D%3D.FHPUR7F1zSTedxKdULuHQbJt%2BgAjVkHdstH%2FO1aoadA%3D"
+                rel="nofollow" target="_blank">http://animejs.com</a></li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=QtWaTPzRbsbbaapyyXjinQ%3D%3D.2wW9Ctv8H5kaovvGJz1ICSAaJ9t%2FHfTIYqNdxa4RS8HdYmBQW8MhVHgsFDDrvRdI"
+               rel="nofollow" target="_blank">particles.js</a>：用于创建粒子的轻量 JavaScript 库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=DFT3V%2BCjXj%2FUuj8sYfOVvg%3D%3D.FAN50v5J%2Fqu1C1DNveRm1fTPzrjXQMMg%2BeIagzjMsVEZiDguu7AzUYyuxhDVIKgn"
+               rel="nofollow" target="_blank">tsParticles</a>：particles.js 全新升级版本，修复了 bug ，增加许多新功能。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=KMHa4Anzou1C9p60na0txg%3D%3D.J%2B4U9svJzxp6GmxUS7yyWoXGT6NLFEJHRG0kwSyKHolYM%2BPsG1zTvoHoKcMVWFNv"
+               rel="nofollow" target="_blank">particles-bg</a>：一款轻量的粒子运动动画背景 React 组件。
+        </li>
+    </ul>
+    <h2 id="item-2-26">图片处理</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=WIgfFh7s%2FzfjghS1kdD8gg%3D%3D.jxJ4rbuI2aDD7P0w5GADl%2FQBT%2FJnOvBZMjZCOdA4ymhoGw53xXLCueihuLVYfzEA"
+               rel="nofollow" target="_blank">lena.js</a>：具有滤镜和实用功能的图像处理库。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=xMRSYOfkXntKG7WOPYF6yQ%3D%3D.59uFhtL9qLT81D8j7a4wQxR7ex3LqdlxFmhSlbrLEeA%3D"
+               rel="nofollow" target="_blank">pica</a>：高质量地调整图片大小（使用快速、纯 JS 实现的 Lanczos 滤镜算法）。
+        </li>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=vZ7YFaB%2BOcO4sZeK%2BrU5Bg%3D%3D.ZMEbfTcQPd%2BGMAqavZIEyQZYO5DzAIvo5Uu%2F3PqZlE0uUwWPrMfQ8CVSUMU5kBSa"
+               rel="nofollow" target="_blank">cropper</a>：一个简单的图像裁剪 jQuery 插件。
+        </li>
+    </ul>
+    <h1 id="item-3">最后</h1>
+    <h2 id="item-3-27">历史文章</h2>
+    <ul>
+        <li>
+            <a href="https://link.segmentfault.com/?enc=p%2BNv%2BPJVGTUBR9NRexIu%2Fg%3D%3D.KCdwpRrmDEatfQDUuXJjWmacMZ%2BUeyP%2FEU22bSHR8ofhmZJSEt3iCovMZZooKzaL"
+               rel="nofollow" target="_blank">必须知道的JavaScript库 - 可视化库</a></li>
+    </ul>
+</article>
+
+</body>
+</html>

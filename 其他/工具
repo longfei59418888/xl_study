@@ -1,0 +1,226 @@
+编辑器
+ace：Ace ，即 Ajax.org Cloud9 Editor。
+CodeMirror：一个浏览器端的代码编辑器，用 JS 实现。
+esprima：用于多用途分析的 ECMAScript 解析器。
+quill：一个带有 API 的跨浏览器富文本编辑器。
+medium-editor：Medium.com 使用的所见即所得编辑器的克隆版。
+pen：享受在线编辑（支持 markdown）。
+jquery-notebook：一个易用的、简洁优雅的文本编辑器。灵感来源于 Medium。
+bootstrap-wysiwyg：小巧的、兼容 bootstrap 的所见即所得的富文本编辑器。
+ckeditor-releases：适用于每个人的 web 文本编辑器。
+editor：一个 markdown 编辑器，但仍在开发中。
+EpicEditor：一个可嵌入的 JavaScript Markdown 的编辑器，拥有分屏编辑、即时预览、自动保存草稿和离线支持等功能。
+jsoneditor：查看、编辑和格式化 JSON 的 web 工具。
+vim.js：拥有持久化 ~/.vimrc 特性，支持 Vim 的 JavaScript 接口。
+Squire：一个 HTML5 富文本编辑器。
+TinyMCE：一个 JavaScript 富文本编辑器。
+trix：由 Basecamp 制作，适用于每天写作的富文本编辑器。
+Trumbowyg：一款轻量且惊人的所见即所得 JavaScript 编辑器
+Draft.js：用于构建文本编辑器的 React 框架。
+bootstrap-wysihtml5：一款简单漂亮的所见即所得编辑器。
+wysihtml5：基于 HTML5 ，渐进增强的开源富文本编辑器，利用非常严苛的规则旨在生成符合 HTML5 规范的标签，避免生成非规范标签和同行样式。
+raptor-editor：Raptor，一款 HTML5 所见即所得内容编辑器！
+popline：Popline 是一款 HTML5 富文本工具栏。
+Summernote：一个极简的所见即所得编辑器。
+文档
+DevDocs：一款多合一接口文档阅读器，界面统一、高效、排版精良。
+dexy：一款格式自由且文艺的文档工具，可用于编写任何包含代码的技术文档。
+docco：一款快且脏、百来行、文艺范的文档生成器，用 Literate CoffeeScript 实现。
+styledocco：根据样式表生成风格规范文档。
+Ronn：构建手册。把对人类阅读友好的简单文本文件转换成 roff 格式文件，便于终端显示，也可以转换为 HTML ，便于 Web 端显示。
+dox：一款 Node.js 开发的 JavaScript 文档生成器。Dox 不会生成结构样式严苛的文档，而是采用 JSON 表示法，以实现 markdown 和 JSDoc 风格标签。
+jsdox：一款将 JSDoc3 转换成 markdown 的文档生成器。
+ESDoc：一款为 JavaScript 设计的优秀文档生成器。
+YUIDoc：一款提取源码注释生成接口文档的 Node.js 应用，功能类似 Javadoc and Doxygen 。
+coddoc：一款 jsdoc 解析库。Coddoc 与其他工具相比)的不同之处在于，它很容易扩展，通过 coddoc.addTagHandler 和 coddoc.addCodeHandler 来添加标签和代码解析器。 Coddoc 还可以解析源码生成接口文档。
+sphinx：一款让创建智能且漂亮文档更加简单的工具。
+Using JSDoc
+Beautiful docs：一款 markdown 格式文档阅读器。
+documentation.js：支持 ES2015+ 和流注释的接口文档生成器。
+jsduck：为 Sencha JavaScript 框架开发的接口文档生成器，当然其他框架也能用。
+codecrumbs：一款用于学习和记录代码库的可视化工具，通过在源码中插入面包屑来实现功能。
+文件
+Papa Parse：一款强大的 CSV 库，支持解析 CSV 文件/字符串，也能导出 CSV。
+jBinary：对用声明式语法描述文件类型和数据结构的二进制文件，进行高级 I/O（加载、解析、操作、序列化、存储）操作。
+diff2html：git 差异输出解析器，也是 HTML 美化器。
+jsPDF：一款 JavaScript PDF 文件生成器。
+PDF.js：一个 JavaScript PDF 阅读器，社区驱动，Mozilla 支持。
+函数式编程
+underscore：JavaScript 的实用工具。
+lodash：提供一致性、可定制、高性能和额外功能的实用库。
+Sugar：一个扩展了原生对象功能的 JavaScript 库。
+lazy.js：类似 Underscore，但性能更优越
+ramda：一个针对 JavaScript 程序员的实用函数库。
+mout：模块化的 JavaScript 工具库。
+mesh：流数据同步工具。
+preludejs：JavaScript 硬核函数式编程。
+rambda：Ramda 快速小巧的替代品。
+响应式编程
+RxJs：对 JavaScript 进行响应式扩展。
+Bacon：JavaScript 的 FPR（函数式响应式编程）库。
+Kefir：受 Bacon.js 和 RxJS 启发的 FRP 库，专注于高性能和低内存消耗。
+Highland：对 JavaScript 实用工具的重新思考，Highland 能轻易地管理同步和异步信息，而且仅使用标准 JavaScript 和类 Node 流。
+Most.js：高性能 FRP 库。
+Cycle.js：一款用于可预测代码的函数式和响应式 JavaScript 框架。
+concent：绝对是 ❤️ 最简单却 ⚡️ 最强大的 react 状态管理开发框架，可预测、渐进式、高性能。
+数据结构
+数据结构库用于构建一个更复杂的应用。
+
+immutable-js：不可变的数据集合，包括 Sequence、Range、Repeat、Map、OrderedMap、Set 和 sparse Vector。
+mori：使用 ClojureScript 持久化数据结构和支持原生 JavaScript API 的库。
+buckets：完整的、经过充分测试和文档完备的数据结构的 JavaScript 库。
+hashmap：简单的哈希映射实现，支持任何类型的键值。
+日期
+日期库。
+
+moment：解析、验证、操作和显示日期。
+moment-timezone：基于 moment.js 的时区库。
+jquery-timeago：一款支持自动更新模糊时间戳的 jQuery 插件（如："4 分钟之前"）。
+timezone-js：让 JavaScript Date 对象拥有时区功能。使用 Olson zoneinfo 文件记录时区数据。
+date：对人类友好的 Date()。
+ms.js：小巧的毫秒转换工具。
+countdown.js：超小倒计时。
+timeago.js：一个非常轻量级（~1.7 Kb）的用于将时间转化成 xxx时间前 格式的库。
+fecha：轻量级日期格式化和解析库（约 2kb）。可以用来替换 moment.js 格式化和解析日期功能（moment.js 体积比较大——译者注）。
+date-fns：现代 JavaScript 日期功能库。
+map-countdown：构建在 Google 地图上的浏览器倒计时。
+dayjs：Day.js 是一款拥有和 Moment.js 一样的现代化接口的日期库，但它仅仅有 2kb 大小，可以用来替换 Moment.js。
+字符串
+voca：一款超级好用的 JavaScript 字符串库。
+selecting：一个允许你获取用户选定文本的库。
+underscore.string：Underscore.js 的字符串操作扩展。
+string.js：额外的 JavaScript 字符串方法。
+he：健壮的 HTML 实体编码/解码器。
+multiline：多行字符串。
+query-string：解析和字符串化 URL 查询字符串。
+URI.js：URL 操作库。
+jsurl：轻量的 URL 操作库。
+sprintf.js：实现字符串格式化。
+url-pattern：比正则表达式匹配 url 或其它字符串更简单，字符串和数据可相互转化。
+plexis：低保真、强大、社区驱动的字符串操作库。
+数字
+Numeral-js：对数字进行格式化和操作的库。
+chance.js：JavaScript 随机生成器，可以生成数字、字符串等。
+odometer：流畅的数字过渡效果。
+accounting.js：对数字、金钱、货币进行格式化的轻量库，完全本地化和无依赖。
+money.js：一个小巧（1kb）的货币转换库，适用于 web 和 nodeJS。
+Fraction.js：一个有理数库。
+Complex.js：一个复数库。
+Polynomial.js：一个多项式库。
+Quaternion.js：一款适用于 JavaScript 的四元数操作库。
+存储
+store.js：为所有浏览器封装了 LocalStorage，而没有使用 cookies 和 flash。隐秘地使用 localStorage、globalStorage 和用户数据。
+localForage：改善后的离线存储。其封装了 IndexedDB、WebSQL 和 localStorage，拥有操作简单和强大的 API。
+jStorage：jStorage 是一个简单的键值对数据库，用于在浏览器端存储数据。
+cross-storage：获得权限后，能跨域名本地存储。
+basket.js：用 localStorage 加载和缓存脚本的资源加载器。
+bag.js：可以缓存脚本和加载资源，与 basket.js 相似，但增加了键值对接口和对 localStorage / websql / indexedDB 的支持。
+basil.js：智能的 JavaScript 数据持久层库。
+jquery-cookie：轻量简单的、用于读取、编辑和删除 cookie 的 jQuery 插件。
+js-cookie：一款简单、轻量的 cookies 读写删 jQuery 插件。
+Cookies：一个客户端 Cookie 操作库。
+DB.js：基于 Promise 的、封装了 IndexedDB 的库。
+lawnchair.js：简单的客户端 JSON 存储。
+sql.js：基于 Emscripten 将 SQLite 编译成 JavaScript。
+crumbsjs：一款轻量级原生 ES6 cookies 和本地存储 JavaScript 库。
+awesome-web-storage：你必须知道的所有客户端存储知识。
+颜色
+randomColor：JavaScript 颜色生成器。
+chroma.js：拥有各种各样颜色操作的 JavaScript 库。
+color：JavaScript 颜色转换和操作库。
+colors：更智能的默认 web 颜色。
+PleaseJS：随机创建出赏心悦目的颜色和配色方案的 JavaScript 库。
+TinyColor：快速、轻巧的颜色操作和转换库。
+Vibrant.js：从图像提取主要颜色。
+国际化和本地化
+i18next：用 JavaScript 实现国际化（i18n）简单的方法。
+polyglot：小巧的国际化助手库。
+babelfish：提供友好易懂 API 的 i18n 库，并且内置多种支持。
+ttag：基于 ES6 标签模板和优秀的旧 GNU gettext ，新潮的 JavaScript 国际化、本地化库。
+控制流
+async：适用于 node.js 和浏览器的异步工具库。
+q：实现异步 promise 的 JavaScript 工具。
+step：一款可以使逻辑执行更简单的异步控制流库。
+contra：函数式风格实现的异步流控制。
+Bluebird：功能齐全的 promoise 库，专注于功能革新和性能提升。
+when：快速可靠的、Promises/A+ 规范的 when() 实现，而且拥有其它异步操作的优秀特性。
+ObjectEventTarget：为普通对象添加事件监听原型（就如浏览器 DOMElement 的 EventTarget 一样）。
+sporadic：位于 promise 顶部的组合并发抽象（就像流、协程和类似 Go channels 一样），支持 Node.js 和浏览器引擎。
+路由
+director：一个小巧的、与 URL 同构的路由。
+page.js：受 Express router 启发的小型客户端路由器（约为1200字节）。
+pathjs：简单、轻量的 web 路由。
+crossroads：JavaScript 路由。
+davis.js：基于 pushState 可降级 RESTful 风格的 JavaScript 路由。
+navaid：一款浏览器端的导航辅助系统（也可以成为路由），体积才 850 字节！
+安全性
+DOMPurify：针对 HTML、MathML 和 SVG 的仅支持 DOM 的超快速、高容错的 XSS 过滤器。
+js-xss：通过白名单配置，即可过滤不信任的 HTML（防止 XSS 攻击）。
+xss-filters：Yahoo 出品的安全 XSS 过滤器。
+日志
+log：带样式的 Console.log。
+Conzole：对 JavaScript 原生 console 对象方法和功能进行封装的 debug 面板，并将面板显示在页面内。
+console.log-wrapper：将日志清晰地记录到 console，兼容所有浏览器。
+loglevel：最轻量的 JavaScript 日志记录工具库，向封装后的 console.log 方法增加可靠的日志等级。
+minilog：轻量的、流式 API 显示的、可用于客户端和服务器端的日志记录库。
+storyboard：通用日志库 + Chrome 扩展。提供一个单一入口查看包含客户端和服务端的任务触发日志。
+正则表达式
+RegEx101：在线的 JavaScript 正则表达式测试器和调试器。同时也支持 Python、PHP 和 PCRE。
+RegExr：用于创建、测试和学习正则表达式的 HTML/JS 工具。
+语音命令
+annyang：向网站添加语音命令的语音识别库。
+voix.js：向网站、app 或游戏添加语音命令的 JavaScript 库。
+API
+axios：基于 Promise 的 HTTP 客户端，适用于 Node.js 和 浏览器。
+bottleneck：强大的速度限制器，使调节流量变得更容易。
+oauth-signature-js：适用于 node 和 浏览器的 OAuth 1.0a 签名生成器。
+amygdala：为 Web 应用提供 RESTful HTTP 客户端解决方案。
+jquery.rest：一个让 RESTful API 更易用的 jQuery 插件。
+Rails Ranger：为 Ruby Tails 接口设计的严格的 REST 客户端。
+wretch：一款小巧的直觉语法系 fetch 功能封装包。
+FarFetch：简单易用的现代 Fetch 接口封装，简化了文件上传。
+Optic：Optic 用于对 API 自动测试和文档生成。
+SWR：用于远端数据拉取的 React Hooks 库。
+流媒体
+Tailor：适用于前端微服务的流媒体布局服务，灵感来自 Facebook BigPipe。
+视觉检测
+tracking.js：在 web 上实现计算视觉的一种现代方法。
+ocrad.js：基于 Emscripten 的 JavaScript OCR 实现。
+机器学习
+ConvNetJS：JavaScript 深度学习。在浏览器环境训练卷积神经网络（或者普通神经网络）。
+DN2A：数字神经网络架构。
+Brain.js：JavaScript 神经网络。
+Mind.js：一款灵活的神经网络库。
+Synaptic.js：适用于 Node.js 和浏览器的无架构神经网络库。
+TensorFlow.js：一款用于在 浏览器和 Node.js 中训练和部署 ML 模型的 JavaScript 库。
+ml5.js：友好的 Web 端机器学习库。
+Synapses：轻量级跨平台神经网络库。
+浏览器检测
+bowser：一个浏览器检测器，特点是小巧快速且 API 丰富。
+基准测试
+benchmark.js：jsPerf.com 使用的基准测试库。
+matcha：一款咖啡因驱动的基准测试简单实现。
+动画
+velocity：加速 JavaScript 动画。
+jquery.transit：拥有超级流畅的 CSS3 变换和过渡效果的 jQuery 插件。
+impess.js：在 HTML 文档里，运用 CSS3 变换和过渡制作类似 Prezi 的展现效果。
+bounce.js：可以立刻创建有趣的 CSS3 动画。
+GreenSock-JS：适用于所有主流浏览器的高性能 HTML5 动画。
+TransitionEnd：TransitionEnd 是一个运用 transitonend 事件的、跨浏览器的库。
+Dynamics.js：用于创建符合物理运动规律的 CSS 动画库。
+the-cube：The Cube 是一个 CSS3 过渡效果实验。
+Effeckt.css：一款高性能过渡动画库。
+animate.css：要多易用有多易用的跨浏览器 CSS 动画库。
+textillate：适用于 CSS3 文本动画的简单插件。
+move.js：基于 CSS3 的 JavaScript 动画框架。
+animatable：一个属性，两个值，无穷个可能性。
+shuffle-images：简单有创意地打乱图片。http://www.thepetedesign.com/demos/shuffle-images_demo.html
+smoothState.js：免打扰式页面过渡 jQuery 库。http://smoothstate.com/
+Anime.js：一款 JavaScript 动画引擎。http://animejs.com
+particles.js：用于创建粒子的轻量 JavaScript 库。
+tsParticles：particles.js 全新升级版本，修复了 bug ，增加许多新功能。
+particles-bg：一款轻量的粒子运动动画背景 React 组件。
+图片处理
+lena.js：具有滤镜和实用功能的图像处理库。
+pica：高质量地调整图片大小（使用快速、纯 JS 实现的 Lanczos 滤镜算法）。
+cropper：一个简单的图像裁剪 jQuery 插件。

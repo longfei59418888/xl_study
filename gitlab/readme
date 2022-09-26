@@ -1,0 +1,69 @@
+```
+  docker run --detach --publish 8443:443 --publish 8090:80 --name gitlab --restart always -v /mnt/gitlab/etc:/etc/gitlab -v /mnt/gitlab/log:/var/log/gitlab  -v /mnt/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
+  
+  
+docker run -d  \
+-p 443:443 \
+-p 80:80 \
+-p 222:22 \
+--name gitlab \
+--restart always \
+-v /mnt/gitlab/config:/etc/gitlab \
+-v /mnt/gitlab/logs:/var/log/gitlab \
+-v /mnt/gitlab/data:/var/opt/gitlab \
+gitlab/gitlab-ce
+```
+
+- 重置密码
+
+```dotenv
+cd /opt/gitlab/bin
+gitlab-rails console production
+gitlab-rails console -e production
+u=User.where(id:1).first
+u.password='12345678'
+u.password_confirmation='12345678'
+u.save!
+
+
+gitlab_rails['initial_root_password']
+```
+
+```dotenv
+
+# gitlab.rb文件内容默认全是注释
+vi /home/gitlab/config/gitlab.rb
+# 配置http协议所使用的访问地址,不加端口号默认为80
+external_url 'http://192.168.0.100'
+
+# 配置ssh协议所使用的访问地址和端口
+gitlab_rails['gitlab_ssh_host'] = '192.168.0.100'
+gitlab_rails['gitlab_shell_ssh_port'] = 222
+
+docker restart gitlab
+```
+
+```
+/opt/gitlab/embedded/service/gitlab-rails/config/gitlab.yml
+host: 192.168.2.238
+port: 8088
+https: false
+
+gitlab-ctl restart
+```
+
+- runner
+
+```dotenv
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.rpm.sh | sudo bash
+yum install gitlab-ci-multi-runner
+gitlab-runner register -n   --url http://192.168.56.116:8090/   --registration-token GR13489416zaQA6mFRXb_wYbR7b1T   --executor docker   --description "My Docker Runner"   --docker-image "docker:19.03.12"   --docker-privileged   --docker-volumes "/certs/client"
+
+```
+
+- 设置镜像缓存
+
+```dotenv
+/etc/gitlab-runner/config.toml
+pull_policy="if-not-present"
+```

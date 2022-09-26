@@ -1,0 +1,18 @@
+###  pipeline
+- pipeline 是持续集成、持续交付、持续部署的基础单元
+- 包括
+  - Jobs 定义需要做什么，比如：编译、测试
+  - Stages 定义什么阶段运行 Job，例如：在 test 阶段后运行 build
+- Jobs 执行在多个 runners 上的时候，同一个 stage 的多个 Jobs 是并行的
+  - 当前的 stage 所有的 Jobs 完成之后执行下一个 stage
+  - 任何一个 job 失败，则失败终止
+- 
+
+
+
+
+
+
+
+
+

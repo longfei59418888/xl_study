@@ -1,0 +1,23 @@
+{
+  "name": "ko-plus-frontend",
+  "scripts": {
+    "start": "webpack-dev-server --config build/webpack.config.dev.js",
+    "start:qa": "BUILD_ENV=qa npm start",
+    "start:uat": "BUILD_ENV=uat npm start",
+    "start:prod": "BUILD_ENV=prod npm start",
+    "build": "npx webpack --config build/webpack.config.prod.js",
+    "analyzer": "cross-env bundle_analyzer_report=true npx webpack --config build/webpack.config.prod.js",
+    "lint": "eslint 'src/**/*.{ts,js}'",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest --coverage --maxWorkers=2"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-plugin-eslint-test": "1.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
