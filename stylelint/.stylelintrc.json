@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
+  "plugins": [
+    "./plugins/index.js"
+  ],
+  "rules": {
+    "plugin/foo-bar-async": true
+  }
+}

@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: pgadmin
+  name: pgadmin
+  namespace: postgres
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pgadmin
+  template:
+    metadata:
+      labels:
+        app: pgadmin
+    spec:
+      containers:
+        - env:
+            - name: PGADMIN_DEFAULT_EMAIL
+              value: "xiao@domain.com"
+            - name: PGADMIN_DEFAULT_PASSWORD
+              value: "longxiao"
+          image: "dpage/pgadmin4"
+          imagePullPolicy: IfNotPresent
+          name: pgadmin
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: pgadmin
+  name: pgadmin
+  namespace: postgres
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: pgadmin
+  type: NodePort

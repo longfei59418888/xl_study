@@ -108,3 +108,4 @@ git diff release/v59-uat --full-index | sed -n '/^index /p' | sed 's/\./ /g' | a
 
 git log 4240d3b9..6fb710f4  --pretty=format:'%s'  | awk '!a[$1]++' 
 ```
+

@@ -4,7 +4,6 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/docker/nginx" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/gitlab/cicd01" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/gitlab/test-one" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/gitlab/test-ones" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/nestjs/demo" vcs="Git" />
   </component>

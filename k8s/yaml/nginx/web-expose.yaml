@@ -53,7 +53,7 @@ spec:
   # 类型
   # 公有云/对外：LoadBalancer
   # 集群内部使用：ClusterIP
-  # 对外暴漏：NodePort
+  # 节点网络上暴漏：NodePort
   type: NodePort
 status:
   loadBalancer: {}

@@ -1,0 +1,60 @@
+```mermaid
+sequenceDiagram
+participant Wechat as 小程序服务端
+participant Mini as 小程序
+participant shared as  backend<br/>(shared服务)  
+participant userCenter as  userCenter<br/>(userCenter服务)  
+participant backendDB as  backend<br/>(CosDb)  
+participant useCenterDB as  useCenter<br/>(CosDb)  
+rect rgb(191, 222, 233)
+
+Mini ->> Wechat: wx.login(登陆) 
+Wechat -->> Mini: code
+Mini ->> shared: 获取token<br/>(auth/wechat/sigin)
+shared ->> Wechat: 获取微信信息<br/>(jscode2seeion with code)
+Wechat -->> shared: 返回 <br/>openid、session_key、unionid
+shared ->> backendDB: 查询用户信息<br/>(ko-member)with openid
+backendDB -->> shared: 返回用户信息
+alt  如果用户不存在
+shared -->> + shared: 创建用户(member[KoMember])<br/>[unionid、openid]
+shared ->> userCenter: 批量注册用户(admin/user/register/bulk)<br/>[commonds(uid[openid]、type、channel)]
+userCenter ->> useCenterDB: 添加token(user)
+useCenterDB -->> userCenter: 返回 token (userSessionToken)
+userCenter ->> useCenterDB: 添加token(user-mapping)
+useCenterDB -->> userCenter: 返回 token (userMappingSessionToken)
+userCenter ->> useCenterDB: 创建用户(user)<br/>uid[openid]、<br/>type、channel、userSessionToken
+useCenterDB -->> userCenter: 返回 user(openid) 
+userCenter ->> useCenterDB: 查询用户(user)<br/>uid[openid]、<br/>type、channel、userSessionToken
+useCenterDB -->> userCenter: 返回 user(openid) 
+userCenter ->> useCenterDB: 更新用户cokeID(user)<br/>uid[openid]、<br/>cokeID
+useCenterDB -->> userCenter: 返回 user(openid) 
+
+shared ->> userCenter: 注册用户(admin/user/register)<br/>uid[openid\unnoinid]、type、channel
+userCenter ->> useCenterDB: 查询用户信息(user表)
+useCenterDB -->> userCenter: 无用户信息
+userCenter ->> useCenterDB: 保存用户信息(user表)<br/>openid、type、session_token
+useCenterDB -->> userCenter: 返回 session_token
+userCenter -->> shared: 返回<br/>(regitsted、channel、time、id、session_token)
+
+
+end
+
+
+
+
+
+end
+
+ 
+ 
+```
+
+sequenceDiagram participant Wechat as 小程序服务端 participant Mini as 小程序 participant shared as backend<br/>(shared服务)  
+participant backend as backend<br/>(CosDb)  
+participant useCenter as useCenter<br/>(CosDb)
+
+Mini ->> Wechat: wx.login(登陆)
+Wechat -->> Mini: code Mini ->> shared: 获取token<br/>(auth/wechat/sigin)
+shared ->> Wechat: 获取微信信息<br/>(jscode2seeion with code)
+Wechat -->> shared: 返回 <br/>openid、session_key、unionid shared ->> backend: 查询用户信息<br/>(ko-member)with openid backend
+-->> shared: 返回用户信息

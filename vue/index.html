@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    window.processNext = (callback) => {
+      new Promise((resolve) => resolve()).then(res => callback())
+    }
+    let step = 0
+    let debug = false
+    let message = {}
+    window.log = async (...arg) => {
+      if (message[arg[0]]) step = message[arg[0]]
+      console.log(`STEP ${step}:${arg[0]}`)
+      console.log(...arg.slice(1))
+      message[arg[0]] = step
+      step++
+    }
+    window.logBug = async (...arg) => {
+      if (message[arg[0]]) step = message[arg[0]]
+      console.log(`STEP ${step}:${arg[0]}`)
+      console.log(...arg.slice(1))
+      message[arg[0]] = step
+      if(debug) debugger
+      step++
+    }
+  </script>
+  <script src="./vue.js?time=s3sdssdsds2"></script>
+</head>
+<body>
+<div v-focus id="app">{{ message }}是大法师的饭 {{a}}
+  <div @click="plus">test</div>
+  <div @click="plus2">test2</div>
+  <input v-model="model" :type="tex" />
+  <div v-for="i in [1,2,3,4]">{{i}}</div>
+  <ddd :attr="model" test="3" />
+</div>
+<script>
+
+
+  // 注册一个全局自定义指令 `v-focus`
+  Vue.directive("focus", {
+    // 当被绑定的元素插入到 DOM 中时……
+    inserted: function(el) {
+      // 聚焦元素
+      el.focus()
+    }
+  })
+  Vue.component("ddd", {
+    props: ["test", "attr"],
+    template: "<div>{{test}}{{attr}}</div>"
+  })
+  var app = new Vue({
+    el: "#app",
+    // 传入data
+    data: {
+      message: "Hello Vue!",
+      a: 0,
+      tex: "text",
+      model: 0
+    },
+    methods: {
+      plus: function() {
+        this.a++
+      },
+      plus2: function() {
+        this.model = 2
+      }
+    }
+  })
+  console.log(app)
+</script>
+</body>
+</html>

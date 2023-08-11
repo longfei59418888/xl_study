@@ -1,40 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="提交">
-      <change afterPath="$PROJECT_DIR$/eslint/lib/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git 官网学习/cicd/gitlab-ci.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitlab/.gitlab-ci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitlab/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitlab/readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/nginx-ingress" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/调度策略-亲和性.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/markdown/时序图.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngnix/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/npm/npm-deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/npm/npm-ingress.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/npm/npm-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/npm/私服搭建 k8s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/计算机网络/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/计算机网络/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown/ocp/register" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git 官网学习/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/git 官网学习/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript基础/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript基础/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jenkins/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/ingress.md" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/ingress.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/yaml/gitlab/web-gitlab" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/yaml/gitlab/web-gitlab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/yaml/nginx/web-expose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/yaml/nginx/web-expose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/k8s/搭建简易集群.md" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/搭建简易集群.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linux学习/cmd.md" beforeDir="false" afterPath="$PROJECT_DIR$/linux学习/cmd.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nestjs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nestjs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nestjs/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/nestjs/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ngnix/配置nginx编译环境" beforeDir="false" afterPath="$PROJECT_DIR$/ngnix/配置nginx编译环境" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typescript/保留关键字.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/typescript/保留关键字.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/单元测试/jest.md" beforeDir="false" afterPath="$PROJECT_DIR$/单元测试/jest.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +26,15 @@
         <option value="TypeScript JSX File" />
         <option value="HTML File" />
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -66,39 +45,35 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1aYmJTTK6MmJsMUFohDOlUFY53H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gitlab" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/nestjs/demo/node_modules/typescript/lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "/Users/xiaolong.wang1/Desktop/items/npms/xl_study/stylelint/node_modules/stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stylelint/test" />
+      <recent name="$PROJECT_DIR$/vue" />
+      <recent name="$PROJECT_DIR$/k8s/yaml/gitlab/config" />
       <recent name="$PROJECT_DIR$/gitlab" />
       <recent name="$PROJECT_DIR$/gitlab/cicd01" />
-      <recent name="$PROJECT_DIR$/jenkins" />
-      <recent name="$PROJECT_DIR$/计算机网络" />
-      <recent name="$PROJECT_DIR$/基础学习" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/eslint/src" />
@@ -108,11 +83,23 @@
       <recent name="$PROJECT_DIR$/nestjs/demo/dist" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.index.js">
+  <component name="RunManager" selected="Shell Script.cmd.sh">
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/nestjs/test.js" working-dir="$PROJECT_DIR$/nestjs">
+    <configuration name="cmd.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/linux学习/cmd.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/linux学习" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -147,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.cmd.sh" />
         <item itemvalue="Node.js.index.js" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.prebuild" />
-        <item itemvalue="Node.js.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +318,37 @@
       <workItem from="1663642416563" duration="2732000" />
       <workItem from="1663729173196" duration="11699000" />
       <workItem from="1663906882332" duration="3798000" />
-      <workItem from="1663925488578" duration="10937000" />
+      <workItem from="1663925488578" duration="16476000" />
+      <workItem from="1664505962502" duration="10192000" />
+      <workItem from="1666268245347" duration="2433000" />
+      <workItem from="1666534020157" duration="874000" />
+      <workItem from="1669100282978" duration="177000" />
+      <workItem from="1669172950746" duration="11066000" />
+      <workItem from="1669385578378" duration="915000" />
+      <workItem from="1669436827286" duration="9586000" />
+      <workItem from="1669607151591" duration="1494000" />
+      <workItem from="1669716189423" duration="12618000" />
+      <workItem from="1671088273165" duration="311000" />
+      <workItem from="1671088988342" duration="14609000" />
+      <workItem from="1671507516098" duration="637000" />
+      <workItem from="1671687143184" duration="772000" />
+      <workItem from="1672901694903" duration="12059000" />
+      <workItem from="1673339424248" duration="737000" />
+      <workItem from="1673426534400" duration="570000" />
+      <workItem from="1678240705010" duration="733000" />
+      <workItem from="1679278227600" duration="1429000" />
+      <workItem from="1679386002685" duration="32529000" />
+      <workItem from="1679720109204" duration="643000" />
+      <workItem from="1679891210070" duration="1633000" />
+      <workItem from="1680332954286" duration="3373000" />
+      <workItem from="1680427067378" duration="2903000" />
+      <workItem from="1680503310271" duration="1191000" />
+      <workItem from="1683542020174" duration="6054000" />
+      <workItem from="1685517708271" duration="9792000" />
+      <workItem from="1685615602978" duration="547000" />
+      <workItem from="1685617103183" duration="3000" />
+      <workItem from="1685617125049" duration="567000" />
+      <workItem from="1690511095393" duration="2398000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>
@@ -389,11 +406,64 @@
       <option name="project" value="LOCAL" />
       <updated>1637120086866</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="提交">
+      <created>1664204148159</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664204148160</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
