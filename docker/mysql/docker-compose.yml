@@ -1,0 +1,14 @@
+services:
+  mysql-db:
+    container_name: mysql
+    image: bitnami/mysql:latest
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      # 挂载数据目录
+      - "./data:/var/lib/mysql"
+      # 挂载配置文件目录
+      - "./config:/etc/mysql/conf.d"

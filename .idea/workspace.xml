@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="提交">
-      <change afterPath="$PROJECT_DIR$/markdown/ocp/register" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/yaml/gitlab/web-gitlab" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/yaml/gitlab/web-gitlab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/yaml/nginx/web-expose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/yaml/nginx/web-expose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/搭建简易集群.md" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/搭建简易集群.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux学习/cmd.md" beforeDir="false" afterPath="$PROJECT_DIR$/linux学习/cmd.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +51,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/wangxiaolong/Desktop/github/xl_study/docker/apollo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -69,11 +67,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker/apollo" />
+      <recent name="$PROJECT_DIR$/docker/xxl-job" />
       <recent name="$PROJECT_DIR$/stylelint/test" />
       <recent name="$PROJECT_DIR$/vue" />
       <recent name="$PROJECT_DIR$/k8s/yaml/gitlab/config" />
-      <recent name="$PROJECT_DIR$/gitlab" />
-      <recent name="$PROJECT_DIR$/gitlab/cicd01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/eslint/src" />
@@ -349,6 +347,9 @@
       <workItem from="1685617103183" duration="3000" />
       <workItem from="1685617125049" duration="567000" />
       <workItem from="1690511095393" duration="2398000" />
+      <workItem from="1724403443683" duration="3143000" />
+      <workItem from="1724665181503" duration="8373000" />
+      <workItem from="1726105709856" duration="25756000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>

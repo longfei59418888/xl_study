@@ -1,0 +1,46 @@
+services:
+  apollo-configservice:                                         # 容器服务名
+    container_name: apollo-configservice                        # 容器名
+    image: apolloconfig/apollo-configservice:2.2.0              # 镜像名
+    network_mode: host                                          # 网络设置
+    ports:
+      - "8080:8080"
+
+    volumes:
+      - "./logs/100003171:/opt/logs/100003171"    ##将/opt/logs/100003171目录挂载到宿主机的/docker/apollo/logs/100003171方便在宿主机上查看日志
+    environment:
+      - spring_datasource_url=jdbc:mysql://172.16.14.133:3306/ApolloConfigDB?characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      - spring_datasource_username=root
+      - spring_datasource_password=123456
+
+  apollo-adminservice:
+    container_name: apollo-adminservice
+    image: apolloconfig/apollo-adminservice:2.2.0
+    network_mode: host
+    ports:
+      - "8090:8090"
+
+    depends_on:
+      - apollo-configservice
+    volumes:
+      - "./logs/100003172:/opt/logs/100003172"
+    environment:
+      - spring_datasource_url=jdbc:mysql://172.16.14.133:3306/ApolloConfigDB?characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      - spring_datasource_username=root
+      - spring_datasource_password=123456
+
+  apollo-portal:
+    container_name: apollo-portal
+    image: apolloconfig/apollo-portal:2.2.0
+    network_mode: host
+    ports:
+      - "8070:8070"
+
+    depends_on:
+      - apollo-adminservice
+    volumes:
+      - "./logs/100003173:/opt/logs/100003173"
+    environment:
+      - spring_datasource_url=jdbc:mysql://172.16.14.133:3306/ApolloPortalDB?characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      - spring_datasource_username=root
+      - spring_datasource_password=123456
