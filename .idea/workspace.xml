@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="提交">
+    <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="feat: add docker yml">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typescript/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/typescript/test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,36 +50,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/wangxiaolong/Desktop/github/xl_study/docker/apollo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "/Users/xiaolong.wang1/Desktop/items/npms/xl_study/stylelint/node_modules/stylelint",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wangxiaolong/Desktop/github/xl_study/音视频/WebCodecs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/xiaolong.wang1/Desktop/items/npms/xl_study/stylelint/node_modules/stylelint&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm 2.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/音视频/WebCodecs" />
+      <recent name="$PROJECT_DIR$/docker/minio" />
       <recent name="$PROJECT_DIR$/docker/apollo" />
       <recent name="$PROJECT_DIR$/docker/xxl-job" />
       <recent name="$PROJECT_DIR$/stylelint/test" />
-      <recent name="$PROJECT_DIR$/vue" />
-      <recent name="$PROJECT_DIR$/k8s/yaml/gitlab/config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/音视频/WebCodecs" />
       <recent name="$PROJECT_DIR$/eslint/src" />
       <recent name="$PROJECT_DIR$/spring/spring boot/mvc" />
       <recent name="$PROJECT_DIR$/spring/spring boot" />
       <recent name="$PROJECT_DIR$/nestjs/demo" />
-      <recent name="$PROJECT_DIR$/nestjs/demo/dist" />
     </key>
   </component>
   <component name="RunManager" selected="Shell Script.cmd.sh">
@@ -349,7 +351,11 @@
       <workItem from="1690511095393" duration="2398000" />
       <workItem from="1724403443683" duration="3143000" />
       <workItem from="1724665181503" duration="8373000" />
-      <workItem from="1726105709856" duration="25756000" />
+      <workItem from="1726105709856" duration="29468000" />
+      <workItem from="1726728076321" duration="5500000" />
+      <workItem from="1727163877947" duration="9861000" />
+      <workItem from="1730447405379" duration="6399000" />
+      <workItem from="1733893882560" duration="2857000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>
@@ -414,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1664204148160</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: add docker yml">
+      <option name="closed" value="true" />
+      <created>1726220879595</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1726220879595</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +485,8 @@
     <MESSAGE value="m" />
     <MESSAGE value="呼吸效果/悬浮效果" />
     <MESSAGE value="提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交" />
+    <MESSAGE value="feat: add docker yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add docker yml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

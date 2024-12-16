@@ -2,7 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/docker/nginx" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/gitlab/cicd01" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/gitlab/test-ones" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/nestjs/demo" vcs="Git" />
