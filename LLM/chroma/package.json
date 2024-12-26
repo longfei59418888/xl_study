@@ -1,0 +1,19 @@
+{
+  "name": "chroma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "tsc --init",
+    "run": "ts-node ./index.ts "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromadb": "^1.9.4",
+    "chromadb-default-embed": "^2.13.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

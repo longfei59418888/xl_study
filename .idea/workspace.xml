@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="feat: add docker yml">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="feat: add elk minio and audio code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typescript/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/typescript/test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +19,10 @@
         <option value="md" />
         <option value="TypeScript JSX File" />
         <option value="HTML File" />
-        <option value="TypeScript File" />
         <option value="package.json" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -50,30 +48,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/wangxiaolong/Desktop/github/xl_study/音视频/WebCodecs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/xiaolong.wang1/Desktop/items/npms/xl_study/stylelint/node_modules/stylelint&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm 2.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/wangxiaolong/Desktop/github/xl_study/LLM/chroma",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "/Users/xiaolong.wang1/Desktop/items/npms/xl_study/stylelint/node_modules/stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/wangxiaolong/Desktop/github/xl_study/LLM/chroma/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LLM/chroma" />
       <recent name="$PROJECT_DIR$/音视频/WebCodecs" />
       <recent name="$PROJECT_DIR$/docker/minio" />
       <recent name="$PROJECT_DIR$/docker/apollo" />
       <recent name="$PROJECT_DIR$/docker/xxl-job" />
-      <recent name="$PROJECT_DIR$/stylelint/test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/音视频/WebCodecs" />
@@ -83,7 +82,7 @@
       <recent name="$PROJECT_DIR$/nestjs/demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.cmd.sh">
+  <component name="RunManager" selected="npm.run">
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -102,6 +101,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="init" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/LLM/chroma/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="init" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/eslint/package.json" />
       <command value="run" />
@@ -112,21 +121,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="prebuild" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/nestjs/demo/package.json" />
+    <configuration name="run" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/LLM/chroma/package.json" />
       <command value="run" />
       <scripts>
-        <script value="prebuild" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/nestjs/demo/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start:dev" />
+        <script value="run" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -134,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.run" />
+        <item itemvalue="npm.init" />
         <item itemvalue="Shell Script.cmd.sh" />
         <item itemvalue="Node.js.index.js" />
         <item itemvalue="npm.lint" />
-        <item itemvalue="npm.start:dev" />
-        <item itemvalue="npm.prebuild" />
       </list>
     </recent_temporary>
   </component>
@@ -356,6 +355,9 @@
       <workItem from="1727163877947" duration="9861000" />
       <workItem from="1730447405379" duration="6399000" />
       <workItem from="1733893882560" duration="2857000" />
+      <workItem from="1734337352486" duration="6115000" />
+      <workItem from="1734423810901" duration="696000" />
+      <workItem from="1735114354511" duration="4522000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>
@@ -428,7 +430,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726220879595</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: add elk minio and audio code">
+      <option name="closed" value="true" />
+      <created>1734337408487</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1734337408487</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +496,8 @@
     <MESSAGE value="呼吸效果/悬浮效果" />
     <MESSAGE value="提交" />
     <MESSAGE value="feat: add docker yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add docker yml" />
+    <MESSAGE value="feat: add elk minio and audio code" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add elk minio and audio code" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
