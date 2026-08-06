@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="feat: add elk minio and audio code">
+    <list default="true" id="4343b6a9-156a-4720-9908-8281fa2f68ac" name="Default Changelist" comment="feat: add chroma doc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LLM/chroma/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/LLM/chroma/.yarn/install-state.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LLM/chroma/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LLM/chroma/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LLM/chroma/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/LLM/chroma/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LLM/chroma/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LLM/chroma/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +46,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="1aYmJTTK6MmJsMUFohDOlUFY53H" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,9 +58,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/wangxiaolong/Desktop/github/xl_study/LLM/chroma",
+    "last_opened_file_path": "/Users/wangxiaolong/Desktop/github/xl_study",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -68,11 +75,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/android/gradle" />
       <recent name="$PROJECT_DIR$/LLM/chroma" />
       <recent name="$PROJECT_DIR$/音视频/WebCodecs" />
       <recent name="$PROJECT_DIR$/docker/minio" />
       <recent name="$PROJECT_DIR$/docker/apollo" />
-      <recent name="$PROJECT_DIR$/docker/xxl-job" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/音视频/WebCodecs" />
@@ -152,6 +159,13 @@
         </serviceView>
       </list>
     </option>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -358,6 +372,16 @@
       <workItem from="1734337352486" duration="6115000" />
       <workItem from="1734423810901" duration="696000" />
       <workItem from="1735114354511" duration="4522000" />
+      <workItem from="1735192271309" duration="374000" />
+      <workItem from="1735223142593" duration="4769000" />
+      <workItem from="1735262301122" duration="15441000" />
+      <workItem from="1735779505647" duration="1961000" />
+      <workItem from="1735794463455" duration="599000" />
+      <workItem from="1735802062758" duration="11000" />
+      <workItem from="1735832439667" duration="920000" />
+      <workItem from="1736672226296" duration="604000" />
+      <workItem from="1742354839504" duration="3086000" />
+      <workItem from="1773365474694" duration="5219000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1567671874112</created>
@@ -438,7 +462,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734337408487</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: add chroma doc">
+      <option name="closed" value="true" />
+      <created>1735192631256</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735192631257</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +529,8 @@
     <MESSAGE value="提交" />
     <MESSAGE value="feat: add docker yml" />
     <MESSAGE value="feat: add elk minio and audio code" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add elk minio and audio code" />
+    <MESSAGE value="feat: add chroma doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add chroma doc" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
