@@ -1,7 +1,7 @@
 name: "kafka"
 services:
   kafka:
-    image: bitnami/kafka:3.6.2
+    image: soldevelo/kafka:3.6.2
     container_name: kafka
     restart: always
     ulimits:
